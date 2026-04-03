@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Sharabesh Technologies & Energies | Premium Navbar</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/solutions.css">
+    <link rel="stylesheet" href="css/testimonial.css">
+    <link rel="stylesheet" href="css/trusted.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/homepagecss/homehero.css">
+    <link rel="stylesheet" href="css/homepagecss/homecontact.css">
+    <link rel="stylesheet" href="css/homepagecss/whychoose.css">
+    <link rel="stylesheet" href="css/homepagecss/process.css">
+   
+</head>
+<body>
+
+<!-- STICKY NAVIGATION BAR with actual logo image -->
+<nav class="navbar">
+    <div class="nav-container">
+        <!-- Left: Logo image (actual SVG data URI - solar/leaf icon) -->
+        <div class="logo-area">
+            <div class="logo-image">
+                <img class="logo-img" src="imagess/client logo.jpeg" alt="Sharabesh Technologies Logo">
+                <!-- <span class="logo-text-small">Sharabesh</span> -->
+            </div>
+        </div>
+
+        <!-- Hamburger button (mobile only) -->
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+      <!-- Desktop + Mobile Menu -->
+        <ul class="nav-menu" id="navMenu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Our Offerings <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="home.html">Home</a>
+                    <a href="commercial.html">Commercial</a>
+                    <a href="housingsociety.html">House Society</a>
+                  
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Solar Solutions <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="ongridsolarsystem.html">On Grid Solar System</a>
+                    <a href="offgridSolarsystem.html">Off Grid Solar System</a>
+                    
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">More <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="solarcalculator.html">Solar Calculator</a>
+                    <a href="solarpro.html">Solar Pro</a>
+                </div>
+            </li>
+            <li class="nav-cta">
+                <a href="contact.html" class="cta-primary">Get Free Solar Quote</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Overlay for mobile menu -->
+<div id="menuOverlay" class="menu-overlay"></div>
+
+
+<!-- Tabbed Consultation Section | Sharabesh Technologies & Energies -->
+<!-- Three Tabs: Residential | Housing Society | Commercial -->
+<section class="sharabesh-tabbed-consultation">
+    <div class="sharabesh-tabbed-container">
+        
+        <!-- Section Header -->
+        <div class="tabbed-header">
+            <div class="header-badge">
+                <i class="fas fa-calendar-check"></i> Schedule a FREE consultation
+            </div>
+            <h2 class="tabbed-main-title">
+                Get your <span class="highlight-green">custom solar quote</span> today
+            </h2>
+            <p class="tabbed-subtitle">Choose your category and fill the form — we'll get back to you within 24 hours</p>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <div class="tabs-navigation">
+            <button class="tab-btn active" data-tab="residential">
+                <i class="fas fa-home"></i> Residential
+            </button>
+            <button class="tab-btn" data-tab="housing">
+                <i class="fas fa-building"></i> Housing Society
+            </button>
+            <button class="tab-btn" data-tab="commercial">
+                <i class="fas fa-industry"></i> Commercial
+            </button>
+        </div>
+
+        <!-- Tab Content: Residential -->
+        <div class="tab-content-wrapper active" id="tab-residential">
+            <div class="tab-form-card">
+                <form class="consultation-tab-form" data-type="residential">
+                    <div class="form-row-2">
+                        <div class="form-field">
+                            <label>Full Name <span class="required">*</span></label>
+                            <input type="text" class="res-name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-field">
+                            <label>WhatsApp Number <span class="required">*</span></label>
+                            <input type="tel" class="res-mobile" placeholder="10-digit mobile number" required>
+                        </div>
+                    </div>
+                    <div class="form-row-2">
+                        <div class="form-field">
+                            <label>Pin Code <span class="required">*</span></label>
+                            <input type="text" class="res-pincode" placeholder="Enter pin code" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Property Type</label>
+                            <select class="res-property">
+                                <option value="">Select property type</option>
+                                <option>Individual House</option>
+                                <option>Apartment/Flat</option>
+                                <option>Villa</option>
+                                <option>Row House</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row-2">
+                        <div class="form-field">
+                            <label>Average Monthly Bill <span class="required">*</span></label>
+                            <select class="res-bill" required>
+                                <option value="">Select bill range</option>
+                                <option>Less than ₹1,500</option>
+                                <option>₹1,500 - ₹2,500</option>
+                                <option>₹2,500 - ₹4,000</option>
+                                <option>₹4,000 - ₹8,000</option>
+                                <option>More than ₹8,000</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label>Rooftop Area (sq. ft.)</label>
+                            <input type="text" class="res-area" placeholder="Approximate available area">
+                        </div>
+                    </div>
+                    <div class="form-field checkbox-field">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="res-terms" required>
+                            <span>I agree to Sharabesh Technologies' <a href="#">terms of service</a> & <a href="#">privacy policy</a></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-tab-btn">
+                        Get Free Quote <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Tab Content: Housing Society -->
+        <div class="tab-content-wrapper" id="tab-housing">
+            <div class="tab-form-card">
+                <form class="consultation-tab-form" data-type="housing">
+                    <div class="form-row-2">
+                        <div class="form-field">
+                            <label>Society/Association Name <span class="required">*</span></label>
+                            <input type="text" class="housing-name" placeholder="Enter society name" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Contact Person <span class="required">*</span></label>
+                            <input type="text" class="housing-person" placeholder="Full name" required>
+                        </div>
+                    </div>
+                    <div class="form-row-2">
+                        <div class="form-field">
+                            <label>WhatsApp Number <span class="required">*</span></label>
+                            <input type="tel" class="housing-mobile" placeholder="10-digit mobile number" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Pin Code <span class="required">*</span></label>
+                            <input type="text" class="housing-pincode" placeholder="Enter pin code" required>
+                        </div>
+                    </div>
+                    <div class="form-row-2">
+                        <div class="form-field">
+                            <label>Number of Flats/Units</label>
+                            <select class="housing-units">
+                                <option value="">Select range</option>
+                                <option>Less than 50</option>
+                                <option>50 - 100</option>
+                                <option>100 - 200</option>
+                                <option>200 - 500</option>
+                                <option>500+</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label>Common Area Monthly Bill <span class="required">*</span></label>
+                            <select class="housing-bill" required>
+                                <option value="">Select bill range</option>
+                                <option>Less than ₹5,000</option>
+                                <option>₹5,000 - ₹15,000</option>
+                                <option>₹15,000 - ₹30,000</option>
+                                <option>₹30,000 - ₹60,000</option>
+                                <option>More than ₹60,000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row-2">
+                        <div class="form-field">
+                            <label>Available Rooftop Area (sq. ft.)</label>
+                            <input type="text" class="housing-area" placeholder="Approximate area">
+                        </div>
+                        <div class="form-field">
+                            <label>Preferred Installation Timeline</label>
+                            <select class="housing-timeline">
+                                <option value="">Select</option>
+                                <option>Immediately</option>
+                                <option>Within 1 month</option>
+                                <option>Within 3 months</option>
+                                <option>Planning stage</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-field checkbox-field">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="housing-terms" required>
+                            <span>I agree to Sharabesh Technologies' <a href="#">terms of service</a> & <a href="#">privacy policy</a></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-tab-btn">
+                        Get Free Quote <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Tab Content: Commercial -->
+        <div class="tab-content-wrapper" id="tab-commercial">
+            <div class="tab-form-card">
+                <form class="consultation-tab-form" data-type="commercial">
+                    <div class="form-row-2">
+                        <div class="form-field">
+                            <label>Business/Organization Name <span class="required">*</span></label>
+                            <input type="text" class="com-business" placeholder="Enter business name" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Contact Person <span class="required">*</span></label>
+                            <input type="text" class="com-person" placeholder="Full name" required>
+                        </div>
+                    </div>
+                    <div class="form-row-2">
+                        <div class="form-field">
+                            <label>WhatsApp Number <span class="required">*</span></label>
+                            <input type="tel" class="com-mobile" placeholder="10-digit mobile number" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Pin Code <span class="required">*</span></label>
+                            <input type="text" class="com-pincode" placeholder="Enter pin code" required>
+                        </div>
+                    </div>
+                    <div class="form-row-2">
+                        <div class="form-field">
+                            <label>Business Type</label>
+                            <select class="com-type">
+                                <option value="">Select business type</option>
+                                <option>Manufacturing</option>
+                                <option>Office/IT</option>
+                                <option>Retail/Showroom</option>
+                                <option>Hotel/Restaurant</option>
+                                <option>Hospital</option>
+                                <option>Educational Institution</option>
+                                <option>Warehouse/Godown</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label>Average Monthly Bill <span class="required">*</span></label>
+                            <select class="com-bill" required>
+                                <option value="">Select bill range</option>
+                                <option>Less than ₹10,000</option>
+                                <option>₹10,000 - ₹25,000</option>
+                                <option>₹25,000 - ₹50,000</option>
+                                <option>₹50,000 - ₹1,00,000</option>
+                                <option>₹1,00,000 - ₹2,50,000</option>
+                                <option>More than ₹2,50,000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row-2">
+                        <div class="form-field">
+                            <label>Sanctioned Load (kW/kVA)</label>
+                            <input type="text" class="com-load" placeholder="Optional">
+                        </div>
+                        <div class="form-field">
+                            <label>Available Rooftop Area (sq. ft.)</label>
+                            <input type="text" class="com-area" placeholder="Approximate area">
+                        </div>
+                    </div>
+                    <div class="form-field checkbox-field">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="com-terms" required>
+                            <span>I agree to Sharabesh Technologies' <a href="#">terms of service</a> & <a href="#">privacy policy</a></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-tab-btn">
+                        Get Free Quote <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Styles for Tabbed Consultation Section -->
+<style>
+    .sharabesh-tabbed-consultation {
+        --primary-green: #2ECC71;
+        --dark-green: #1B5E20;
+        --accent-lime: #A5D6A7;
+        --deep-blue: #0D1B4C;
+        --white: #FFFFFF;
+        --light-grey: #F5F7FA;
+        --text-dark: #1A1A1A;
+        --text-light: #6B7280;
+        --shadow-sm: 0 8px 20px rgba(0, 0, 0, 0.08);
+        --shadow-md: 0 20px 35px -12px rgba(0, 0, 0, 0.15);
+        --transition: all 0.3s ease;
+    }
+
+    .sharabesh-tabbed-consultation {
+        width: 100%;
+        background: linear-gradient(135deg, var(--light-grey) 0%, #FFFFFF 100%);
+        padding: 3rem 0 4rem 0;
+        font-family: 'Inter', 'Poppins', sans-serif;
+    }
+
+    .sharabesh-tabbed-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    /* Header Styles */
+    .tabbed-header {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .header-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(46, 204, 113, 0.12);
+        color: var(--primary-green);
+        padding: 0.35rem 1rem;
+        border-radius: 40px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .tabbed-main-title {
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: var(--dark-green);
+        margin-bottom: 0.5rem;
+        letter-spacing: -0.02em;
+    }
+
+    .highlight-green {
+        color: var(--primary-green);
+    }
+
+    .tabbed-subtitle {
+        font-size: 0.9rem;
+        color: var(--text-light);
+    }
+
+    /* Tabs Navigation */
+    .tabs-navigation {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .tab-btn {
+        background: var(--white);
+        border: 1.5px solid #E5E7EB;
+        padding: 0.7rem 1.5rem;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--text-dark);
+        cursor: pointer;
+        transition: var(--transition);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-family: inherit;
+    }
+
+    .tab-btn i {
+        font-size: 1rem;
+        color: var(--text-light);
+    }
+
+    .tab-btn.active {
+        background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+        border-color: transparent;
+        color: white;
+    }
+
+    .tab-btn.active i {
+        color: white;
+    }
+
+    .tab-btn:hover:not(.active) {
+        border-color: var(--primary-green);
+        background: rgba(46, 204, 113, 0.05);
+    }
+
+    /* Tab Content Wrapper */
+    .tab-content-wrapper {
+        display: none;
+        animation: fadeIn 0.3s ease;
+    }
+
+    .tab-content-wrapper.active {
+        display: block;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Form Card */
+    .tab-form-card {
+        background: var(--white);
+        border-radius: 24px;
+        box-shadow: var(--shadow-md);
+        padding: 1.8rem;
+        transition: var(--transition);
+    }
+
+    .tab-form-card:hover {
+        transform: translateY(-3px);
+    }
+
+    /* Form Layout */
+    .consultation-tab-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .form-row-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .form-field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-field label {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--text-dark);
+        margin-bottom: 0.35rem;
+    }
+
+    .required {
+        color: #e74c3c;
+    }
+
+    .form-field input,
+    .form-field select {
+        width: 100%;
+        padding: 0.7rem 0.9rem;
+        border: 1.5px solid #E5E7EB;
+        border-radius: 12px;
+        font-size: 0.85rem;
+        font-family: inherit;
+        transition: var(--transition);
+        background: var(--white);
+    }
+
+    .form-field input:focus,
+    .form-field select:focus {
+        outline: none;
+        border-color: var(--primary-green);
+        box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.1);
+    }
+
+    .checkbox-field {
+        margin: 0.25rem 0;
+    }
+
+    .checkbox-label {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        cursor: pointer;
+        font-size: 0.75rem;
+        color: var(--text-light);
+    }
+
+    .checkbox-label input {
+        width: 16px;
+        height: 16px;
+        accent-color: var(--primary-green);
+        cursor: pointer;
+    }
+
+    .checkbox-label a {
+        color: var(--primary-green);
+        text-decoration: none;
+    }
+
+    .checkbox-label a:hover {
+        text-decoration: underline;
+    }
+
+    /* Submit Button */
+    .submit-tab-btn {
+        background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+        color: white;
+        border: none;
+        padding: 0.85rem;
+        border-radius: 14px;
+        font-size: 0.9rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: var(--transition);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+
+    .submit-tab-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-sm);
+    }
+
+    /* Success Message */
+    .form-success-msg {
+        background: #d4edda;
+        color: #155724;
+        padding: 0.7rem;
+        border-radius: 12px;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 0.8rem;
+        display: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .sharabesh-tabbed-consultation {
+            padding: 2rem 0 3rem 0;
+        }
+        .tabbed-main-title {
+            font-size: 1.4rem;
+        }
+        .tabs-navigation {
+            gap: 0.4rem;
+        }
+        .tab-btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+        }
+        .tab-btn i {
+            font-size: 0.8rem;
+        }
+        .tab-form-card {
+            padding: 1.2rem;
+        }
+        .form-row-2 {
+            grid-template-columns: 1fr;
+            gap: 0.8rem;
+        }
+        .form-field input,
+        .form-field select {
+            padding: 0.6rem 0.8rem;
+            font-size: 0.8rem;
+        }
+        .submit-tab-btn {
+            padding: 0.7rem;
+            font-size: 0.85rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .sharabesh-tabbed-container {
+            padding: 0 1rem;
+        }
+        .tabbed-main-title {
+            font-size: 1.2rem;
+        }
+        .tab-btn {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.7rem;
+        }
+        .tab-form-card {
+            padding: 1rem;
+        }
+    }
+</style>
+
+<!-- Font Awesome & Google Fonts -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- JavaScript for Tabs + WhatsApp Submission -->
+<script>
+    (function() {
+        // Tab Switching Logic
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content-wrapper');
+        
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.getAttribute('data-tab');
+                
+                // Update active class on buttons
+                tabBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Update active content
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                if (tabId === 'residential') {
+                    document.getElementById('tab-residential').classList.add('active');
+                } else if (tabId === 'housing') {
+                    document.getElementById('tab-housing').classList.add('active');
+                } else if (tabId === 'commercial') {
+                    document.getElementById('tab-commercial').classList.add('active');
+                }
+            });
+        });
+        
+        // Helper function to show success message
+        function showSuccessMessage(form, message) {
+            let successDiv = form.querySelector('.form-success-msg');
+            if (!successDiv) {
+                successDiv = document.createElement('div');
+                successDiv.className = 'form-success-msg';
+                form.insertBefore(successDiv, form.firstChild);
+            }
+            successDiv.innerHTML = '<i class="fas fa-check-circle"></i> ' + message;
+            successDiv.style.display = 'block';
+            setTimeout(() => {
+                successDiv.style.display = 'none';
+            }, 5000);
+        }
+        
+        // WhatsApp Number
+        const WHATSAPP_NUMBER = '919789029012';
+        
+        // Residential Form Submission
+        const resForm = document.querySelector('#tab-residential .consultation-tab-form');
+        if (resForm) {
+            resForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = this.querySelector('.res-name')?.value.trim() || '';
+                const mobile = this.querySelector('.res-mobile')?.value.trim() || '';
+                const pincode = this.querySelector('.res-pincode')?.value.trim() || '';
+                const propertyType = this.querySelector('.res-property')?.value || '';
+                const billRange = this.querySelector('.res-bill')?.value || '';
+                const area = this.querySelector('.res-area')?.value.trim() || '';
+                const termsChecked = this.querySelector('.res-terms')?.checked || false;
+                
+                if (!name || !mobile || !pincode || !billRange) {
+                    alert('Please fill all required fields (*)');
+                    return;
+                }
+                if (!/^\d{10}$/.test(mobile)) {
+                    alert('Please enter a valid 10-digit mobile number');
+                    return;
+                }
+                if (!termsChecked) {
+                    alert('Please agree to the terms of service & privacy policy');
+                    return;
+                }
+                
+                const message = `🏠 *RESIDENTIAL SOLAR QUERY* - Sharabesh Technologies 🏠%0A%0A*Name:* ${encodeURIComponent(name)}%0A*WhatsApp:* ${mobile}%0A*Pin Code:* ${encodeURIComponent(pincode)}%0A*Property Type:* ${encodeURIComponent(propertyType || 'Not specified')}%0A*Avg Monthly Bill:* ${encodeURIComponent(billRange)}%0A*Rooftop Area:* ${encodeURIComponent(area || 'Not specified')} sq.ft.%0A%0A_Requesting a free residential solar consultation_`;
+                
+                window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
+                showSuccessMessage(this, 'Thank you! Redirecting to WhatsApp...');
+                this.reset();
+            });
+        }
+        
+        // Housing Society Form Submission
+        const housingForm = document.querySelector('#tab-housing .consultation-tab-form');
+        if (housingForm) {
+            housingForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const societyName = this.querySelector('.housing-name')?.value.trim() || '';
+                const contactPerson = this.querySelector('.housing-person')?.value.trim() || '';
+                const mobile = this.querySelector('.housing-mobile')?.value.trim() || '';
+                const pincode = this.querySelector('.housing-pincode')?.value.trim() || '';
+                const units = this.querySelector('.housing-units')?.value || '';
+                const billRange = this.querySelector('.housing-bill')?.value || '';
+                const area = this.querySelector('.housing-area')?.value.trim() || '';
+                const timeline = this.querySelector('.housing-timeline')?.value || '';
+                const termsChecked = this.querySelector('.housing-terms')?.checked || false;
+                
+                if (!societyName || !contactPerson || !mobile || !pincode || !billRange) {
+                    alert('Please fill all required fields (*)');
+                    return;
+                }
+                if (!/^\d{10}$/.test(mobile)) {
+                    alert('Please enter a valid 10-digit mobile number');
+                    return;
+                }
+                if (!termsChecked) {
+                    alert('Please agree to the terms of service & privacy policy');
+                    return;
+                }
+                
+                const message = `🏢 *HOUSING SOCIETY SOLAR QUERY* - Sharabesh Technologies 🏢%0A%0A*Society Name:* ${encodeURIComponent(societyName)}%0A*Contact Person:* ${encodeURIComponent(contactPerson)}%0A*WhatsApp:* ${mobile}%0A*Pin Code:* ${encodeURIComponent(pincode)}%0A*Number of Units:* ${encodeURIComponent(units || 'Not specified')}%0A*Common Area Bill:* ${encodeURIComponent(billRange)}%0A*Rooftop Area:* ${encodeURIComponent(area || 'Not specified')} sq.ft.%0A*Timeline:* ${encodeURIComponent(timeline || 'Not specified')}%0A%0A_Requesting a free housing society solar consultation_`;
+                
+                window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
+                showSuccessMessage(this, 'Thank you! Redirecting to WhatsApp...');
+                this.reset();
+            });
+        }
+        
+        // Commercial Form Submission
+        const comForm = document.querySelector('#tab-commercial .consultation-tab-form');
+        if (comForm) {
+            comForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const businessName = this.querySelector('.com-business')?.value.trim() || '';
+                const contactPerson = this.querySelector('.com-person')?.value.trim() || '';
+                const mobile = this.querySelector('.com-mobile')?.value.trim() || '';
+                const pincode = this.querySelector('.com-pincode')?.value.trim() || '';
+                const businessType = this.querySelector('.com-type')?.value || '';
+                const billRange = this.querySelector('.com-bill')?.value || '';
+                const load = this.querySelector('.com-load')?.value.trim() || '';
+                const area = this.querySelector('.com-area')?.value.trim() || '';
+                const termsChecked = this.querySelector('.com-terms')?.checked || false;
+                
+                if (!businessName || !contactPerson || !mobile || !pincode || !billRange) {
+                    alert('Please fill all required fields (*)');
+                    return;
+                }
+                if (!/^\d{10}$/.test(mobile)) {
+                    alert('Please enter a valid 10-digit mobile number');
+                    return;
+                }
+                if (!termsChecked) {
+                    alert('Please agree to the terms of service & privacy policy');
+                    return;
+                }
+                
+                const message = `🏭 *COMMERCIAL SOLAR QUERY* - Sharabesh Technologies 🏭%0A%0A*Business Name:* ${encodeURIComponent(businessName)}%0A*Contact Person:* ${encodeURIComponent(contactPerson)}%0A*WhatsApp:* ${mobile}%0A*Pin Code:* ${encodeURIComponent(pincode)}%0A*Business Type:* ${encodeURIComponent(businessType || 'Not specified')}%0A*Avg Monthly Bill:* ${encodeURIComponent(billRange)}%0A*Sanctioned Load:* ${encodeURIComponent(load || 'Not specified')}%0A*Rooftop Area:* ${encodeURIComponent(area || 'Not specified')} sq.ft.%0A%0A_Requesting a free commercial solar consultation_`;
+                
+                window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
+                showSuccessMessage(this, 'Thank you! Redirecting to WhatsApp...');
+                this.reset();
+            });
+        }
+    })();
+</script>
+
+
+
+
+<!-- Footer Section - Sharabesh Technologies & Energies -->
+<!-- Mobile: 2x2 grid layout for links -->
+<footer class="sharabesh-footer">
+    <div class="sharabesh-footer__container">
+        <!-- Top Section: 3 Columns -->
+        <div class="sharabesh-footer__grid">
+            <!-- Left Column: Logo, Tagline, Contact, Social -->
+            <div class="sharabesh-footer__col">
+                <div class="sharabesh-footer__logo">
+                    <div class="sharabesh-footer__logo-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <span class="sharabesh-footer__logo-text">Sharabesh Technologies & Energies</span>
+                </div>
+                <p class="sharabesh-footer__tagline">Powering a sustainable tomorrow, today.</p>
+                
+                <div class="sharabesh-footer__contact">
+                    <div class="sharabesh-footer__contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 1800 123 4567</span>
+                    </div>
+                    <div class="sharabesh-footer__contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@sharabeshenergy.com</span>
+                    </div>
+                    <div class="sharabesh-footer__contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon - Sat: 9:00 AM - 7:00 PM</span>
+                    </div>
+                </div>
+                
+                <div class="sharabesh-footer__social">
+                    <a href="#" class="sharabesh-footer__social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="sharabesh-footer__social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="sharabesh-footer__social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="sharabesh-footer__social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="sharabesh-footer__social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <!-- Middle Column: Our Solutions & Quick Links (2x2 on mobile) -->
+            <div class="sharabesh-footer__col sharabesh-footer__col--links">
+                <div class="sharabesh-footer__links-wrapper">
+                    <div class="sharabesh-footer__links-group">
+                        <h4 class="sharabesh-footer__heading">Our Solutions</h4>
+                        <ul class="sharabesh-footer__links">
+                            <li><a href="#">Residential Solar</a></li>
+                            <li><a href="#">Commercial Solar</a></li>
+                            <li><a href="#">Industrial Solar</a></li>
+                            <li><a href="#">Solar for Societies</a></li>
+                            <li><a href="#">Energy Storage</a></li>
+                            <li><a href="#">EV Charging</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sharabesh-footer__links-group">
+                        <h4 class="sharabesh-footer__heading">Quick Links</h4>
+                        <ul class="sharabesh-footer__links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Get a Quote</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column: Address -->
+            <div class="sharabesh-footer__col">
+                <h4 class="sharabesh-footer__heading">Our Presence</h4>
+                <div class="sharabesh-footer__address">
+                    <div class="sharabesh-footer__address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Bengaluru (HQ)</strong><br>
+                            #45, Electronic City Phase 1,<br>
+                            Bengaluru - 560100
+                        </div>
+                    </div>
+                    <div class="sharabesh-footer__address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Mumbai</strong><br>
+                            BKC, Bandra East,<br>
+                            Mumbai - 400051
+                        </div>
+                    </div>
+                    <div class="sharabesh-footer__address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Delhi NCR</strong><br>
+                            Sector 44, Gurugram,<br>
+                            Haryana - 122002
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Section: Copyright & Legal Links -->
+        <div class="sharabesh-footer__bottom">
+            <div class="sharabesh-footer__bottom-left">
+                <span class="sharabesh-footer__made-in">Proudly made in India <i class="fas fa-heart"></i></span>
+            </div>
+            <div class="sharabesh-footer__bottom-right">
+                <a href="#">Privacy Policy</a>
+                <span class="sharabesh-footer__separator">|</span>
+                <a href="#">Terms of Service</a>
+                <span class="sharabesh-footer__separator">|</span>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+</body>
+<script src="js/navbar.js"></script>
+<script src="js/homepagejs/hero.js"></script>
+<script src="js/homepagejs/homecontact.js"></script>
+<script src="js/testimonial.js"></script>
+<script src="js/blog.js"></script>
+</html>
