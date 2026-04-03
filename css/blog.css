@@ -1,0 +1,296 @@
+    /* Blog/News Section - Sharabesh Theme */
+    .sharabesh-blog {
+        background-color: #F5F7FA;
+        padding: 80px 24px;
+        width: 100%;
+        font-family: 'Inter', 'Poppins', system-ui, -apple-system, sans-serif;
+    }
+
+    .sharabesh-blog__container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .sharabesh-blog__header {
+        text-align: center;
+        margin-bottom: 56px;
+    }
+
+    .sharabesh-blog__title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: #1A1A1A;
+        margin-bottom: 16px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: -0.02em;
+        position: relative;
+    }
+
+    .sharabesh-blog__title::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(135deg, #1B5E20, #2ECC71);
+        margin: 12px auto 0;
+        border-radius: 3px;
+    }
+
+    .sharabesh-blog__subtitle {
+        font-size: 1rem;
+        color: #6B7280;
+        max-width: 600px;
+        margin: 0 auto;
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* Carousel Wrapper */
+    .sharabesh-blog__carousel-wrapper {
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        position: relative;
+        margin: 0 -12px;
+        padding: 0 12px;
+    }
+
+    .sharabesh-blog__carousel-wrapper::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .sharabesh-blog__carousel-wrapper::-webkit-scrollbar-track {
+        background: #E5E7EB;
+        border-radius: 10px;
+    }
+
+    .sharabesh-blog__carousel-wrapper::-webkit-scrollbar-thumb {
+        background: linear-gradient(135deg, #1B5E20, #2ECC71);
+        border-radius: 10px;
+    }
+
+    /* Carousel - Grid Layout (3 columns on desktop) */
+    .sharabesh-blog__carousel {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc(33.333% - 21.33px);
+        gap: 32px;
+        padding: 8px 0 24px 0;
+    }
+
+    /* Blog Card */
+    .sharabesh-blog__card {
+        background: #FFFFFF;
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sharabesh-blog__card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
+    }
+
+    .sharabesh-blog__card-image {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .sharabesh-blog__card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+
+    .sharabesh-blog__card:hover .sharabesh-blog__card-image img {
+        transform: scale(1.05);
+    }
+
+    .sharabesh-blog__card-content {
+        padding: 24px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sharabesh-blog__date {
+        font-size: 0.8rem;
+        color: #2ECC71;
+        font-weight: 600;
+        margin-bottom: 12px;
+        font-family: 'Inter', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .sharabesh-blog__headline {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #1A1A1A;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        font-family: 'Poppins', sans-serif;
+        flex: 1;
+    }
+
+    .sharabesh-blog__read-more {
+        color: #2ECC71;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .sharabesh-blog__read-more:hover {
+        color: #1B5E20;
+        gap: 8px;
+    }
+
+    /* Navigation Buttons */
+    .sharabesh-blog__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        margin-top: 40px;
+    }
+
+    .sharabesh-blog__nav-btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: white;
+        border: 1px solid #E5E7EB;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        color: #1A1A1A;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .sharabesh-blog__nav-btn:hover {
+        background: linear-gradient(135deg, #1B5E20, #2ECC71);
+        border-color: transparent;
+        color: white;
+        transform: scale(1.05);
+    }
+
+    /* Dots */
+    .sharabesh-blog__dots {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .sharabesh-blog__dots .dot {
+        width: 10px;
+        height: 10px;
+        background-color: #CBD5E1;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .sharabesh-blog__dots .dot.active {
+        width: 28px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #1B5E20, #2ECC71);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+        .sharabesh-blog__carousel {
+            grid-auto-columns: calc(50% - 16px);
+            gap: 32px;
+        }
+        
+        .sharabesh-blog__title {
+            font-size: 2.2rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .sharabesh-blog {
+            padding: 60px 20px;
+        }
+        
+        .sharabesh-blog__title {
+            font-size: 1.8rem;
+        }
+        
+        .sharabesh-blog__subtitle {
+            font-size: 0.9rem;
+        }
+        
+        .sharabesh-blog__carousel {
+            grid-auto-columns: calc(100%);
+            gap: 24px;
+        }
+        
+        .sharabesh-blog__card-image {
+            height: 180px;
+        }
+        
+        .sharabesh-blog__card-content {
+            padding: 20px;
+        }
+        
+        .sharabesh-blog__headline {
+            font-size: 1.1rem;
+        }
+        
+        .sharabesh-blog__nav-btn {
+            width: 42px;
+            height: 42px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .sharabesh-blog {
+            padding: 50px 16px;
+        }
+        
+        .sharabesh-blog__title {
+            font-size: 1.6rem;
+        }
+        
+        .sharabesh-blog__card-image {
+            height: 160px;
+        }
+        
+        .sharabesh-blog__card-content {
+            padding: 16px;
+        }
+        
+        .sharabesh-blog__headline {
+            font-size: 1rem;
+        }
+        
+        .sharabesh-blog__date {
+            font-size: 0.7rem;
+        }
+        
+        .sharabesh-blog__nav {
+            gap: 16px;
+            margin-top: 32px;
+        }
+        
+        .sharabesh-blog__nav-btn {
+            width: 38px;
+            height: 38px;
+        }
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@400;500;600;700;800&display=swap');

@@ -1,0 +1,212 @@
+
+    /* ---------- Hero Section Styles ---------- */
+    .sharabesh-hero {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        /* Background image: solar panels in nature (high-res modern image) */
+        background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2072&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center 30%;
+        background-repeat: no-repeat;
+        font-family: 'Inter', 'Poppins', system-ui, -apple-system, sans-serif;
+    }
+
+    /* Dark gradient overlay (deep blue + green blend with opacity) */
+    .sharabesh-hero__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(13, 27, 76, 0.85), rgba(27, 94, 32, 0.75));
+        z-index: 1;
+    }
+
+    .sharabesh-hero__container {
+        position: relative;
+        z-index: 2;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .sharabesh-hero__content {
+        max-width: 900px;
+        margin: 0 auto;
+        color: #FFFFFF;
+    }
+
+    /* Headline */
+    .sharabesh-hero__title {
+        font-size: 3.8rem;
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 1.25rem;
+        letter-spacing: -0.02em;
+        font-family: 'Poppins', sans-serif;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Subheadline */
+    .sharabesh-hero__subtitle {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        color: rgba(255,255,255,0.95);
+        font-family: 'Inter', sans-serif;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Buttons */
+    .sharabesh-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 12px;
+        transition: all 0.25s ease;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .sharabesh-btn--primary {
+        background-color: #2ECC71;
+        color: white;
+    }
+
+    .sharabesh-btn--primary:hover {
+        background-color: #1B5E20;
+        transform: translateY(-3px);
+        box-shadow: 0 12px 24px rgba(27, 94, 32, 0.3);
+    }
+
+    .sharabesh-btn--large {
+        padding: 1rem 2.5rem;
+        font-size: 1.1rem;
+        letter-spacing: 0.3px;
+    }
+
+    /* Trust Badge (Google rating style card) */
+    .sharabesh-trust-badge {
+        margin-top: 3rem;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(8px);
+        border-radius: 28px;
+        padding: 1rem 2rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.2s;
+    }
+
+    .sharabesh-trust-badge__stars {
+        color: #FFB83B;
+        font-size: 1.25rem;
+        letter-spacing: 4px;
+        margin-bottom: 0.3rem;
+    }
+
+    .sharabesh-trust-badge__rating {
+        font-size: 0.95rem;
+        color: white;
+        font-weight: 500;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .sharabesh-trust-badge__rating strong {
+        font-size: 1.2rem;
+        color: #2ECC71;
+    }
+
+    .sharabesh-trust-badge__google-icon {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 8px;
+        font-size: 0.75rem;
+        color: rgba(255,255,255,0.8);
+    }
+
+    /* Animation icons (solar installation / moving vehicles) */
+    .sharabesh-hero__animation {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 5%;
+        pointer-events: none;
+    }
+
+    .sharabesh-hero__solar-icon {
+        width: 70px;
+        opacity: 0.7;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .sharabesh-hero__vehicle-icon {
+        width: 90px;
+        opacity: 0.6;
+        animation: slideInOut 8s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+    }
+
+    @keyframes slideInOut {
+        0% { transform: translateX(-20px); opacity: 0.3; }
+        50% { transform: translateX(15px); opacity: 0.8; }
+        100% { transform: translateX(-20px); opacity: 0.3; }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .sharabesh-hero__title {
+            font-size: 2.5rem;
+        }
+        .sharabesh-hero__subtitle {
+            font-size: 1.2rem;
+        }
+        .sharabesh-btn--large {
+            padding: 0.85rem 1.8rem;
+            font-size: 1rem;
+        }
+        .sharabesh-trust-badge {
+            padding: 0.8rem 1.5rem;
+        }
+        .sharabesh-hero__animation {
+            display: none; /* hide animations on mobile for cleaner look */
+        }
+        .sharabesh-hero {
+            min-height: 90vh;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .sharabesh-hero__title {
+            font-size: 1.9rem;
+        }
+        .sharabesh-hero__subtitle {
+            font-size: 1rem;
+        }
+    }

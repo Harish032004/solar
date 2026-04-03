@@ -1,0 +1,87 @@
+
+    .sharabesh-trusted {
+        background-color: #F5F7FA;
+        padding: 60px 0; /* Remove horizontal padding so carousel can bleed to edges */
+        width: 100%;
+        overflow: hidden; /* Important: hides the logos outside the window */
+    }
+
+    .sharabesh-trusted__title {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+        font-family: 'Poppins', sans-serif;
+        color: #1A1A1A;
+    }
+
+    .sharabesh-trusted__title::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #2ECC71;
+        margin: 10px auto;
+        border-radius: 2px;
+    }
+
+    /* The window through which we see the logos */
+    .sharabesh-trusted__carousel-window {
+        max-width: 1200px; /* Adjust this to control how many logos show (1200px fits ~4-5) */
+        margin: 0 auto;
+        position: relative;
+        /* Optional: Add gradient fades on the sides for a high-end look */
+        mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    }
+
+    /* The moving track */
+    .sharabesh-trusted__track {
+        display: flex;
+        width: calc(250px * 12); /* Width of (logo + gap) * total logos (6 + 6) */
+        animation: scrollLogos 30s linear infinite;
+    }
+
+    .sharabesh-trusted__logo-item {
+        width: 250px; /* Fixed width for each slide to ensure 4 fit in 1000-1200px window */
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sharabesh-trusted__logo-item img {
+        height: 50px;
+        width: auto;
+        max-width: 160px;
+        filter: grayscale(100%);
+        opacity: 0.6;
+        transition: 0.3s ease;
+    }
+
+    .sharabesh-trusted__logo-item:hover img {
+        filter: grayscale(0%);
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    /* Animation: Move track left by half its total width (the length of the first set) */
+    @keyframes scrollLogos {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-250px * 6)); } /* Moves 6 logos distance then snaps back */
+    }
+
+    /* Pause animation on hover */
+    .sharabesh-trusted__track:hover {
+        animation-play-state: paused;
+    }
+
+    /* Mobile: Show fewer logos by shrinking the items */
+    @media (max-width: 768px) {
+        .sharabesh-trusted__logo-item { width: 180px; }
+        .sharabesh-trusted__track { width: calc(180px * 12); }
+        @keyframes scrollLogos {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-180px * 6)); }
+        }
+    }

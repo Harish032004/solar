@@ -1,0 +1,226 @@
+
+    /* About Us Section - Sharabesh Theme */
+    .sharabesh-about {
+        background-color: #FFFFFF;
+        padding: 80px 24px;
+        width: 100%;
+        font-family: 'Inter', 'Poppins', system-ui, -apple-system, sans-serif;
+    }
+
+    .sharabesh-about__container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    /* Main Title */
+    .sharabesh-about__main-title {
+        font-size: 2.8rem;
+        font-weight: 800;
+        color: #1A1A1A;
+        margin-bottom: 32px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+    }
+
+    /* Quote Section */
+    .sharabesh-about__quote {
+        background: linear-gradient(135deg, #F5F7FA, #FFFFFF);
+        border-left: 4px solid #2ECC71;
+        padding: 28px 32px;
+        margin: 32px 0 32px 0;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    }
+
+    .sharabesh-about__quote-text {
+        font-size: 1.2rem;
+        font-style: italic;
+        color: #1A1A1A;
+        line-height: 1.6;
+        margin-bottom: 12px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .sharabesh-about__quote-author {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #2ECC71;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Section Styles */
+    .sharabesh-about__section {
+        margin-bottom: 56px;
+    }
+
+    .sharabesh-about__section-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #1B5E20;
+        margin-bottom: 24px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: -0.01em;
+        position: relative;
+        padding-bottom: 12px;
+    }
+
+    .sharabesh-about__section-title::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(135deg, #1B5E20, #2ECC71);
+        border-radius: 3px;
+    }
+
+    /* Paragraphs */
+    .sharabesh-about__paragraph {
+        font-size: 1rem;
+        color: #4B5563;
+        line-height: 1.7;
+        margin-bottom: 20px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* Features Grid */
+    .sharabesh-about__features-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin: 28px 0 28px 0;
+    }
+
+    .sharabesh-about__feature-item {
+        font-size: 0.95rem;
+        color: #1A1A1A;
+        padding: 10px 0;
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    /* Service Section */
+    .sharabesh-about__service {
+        margin-bottom: 40px;
+        padding-left: 16px;
+        border-left: 3px solid #A5D6A7;
+    }
+
+    .sharabesh-about__service-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #1B5E20;
+        margin-bottom: 16px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .sharabesh-about__service-list {
+        margin: 16px 0 16px 32px;
+        padding: 0;
+    }
+
+    .sharabesh-about__service-list li {
+        font-size: 0.95rem;
+        color: #4B5563;
+        line-height: 1.7;
+        margin-bottom: 8px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+        .sharabesh-about__main-title {
+            font-size: 2.3rem;
+        }
+        
+        .sharabesh-about__section-title {
+            font-size: 1.8rem;
+        }
+        
+        .sharabesh-about__quote-text {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .sharabesh-about {
+            padding: 60px 20px;
+        }
+        
+        .sharabesh-about__main-title {
+            font-size: 1.8rem;
+        }
+        
+        .sharabesh-about__section-title {
+            font-size: 1.5rem;
+        }
+        
+        .sharabesh-about__quote {
+            padding: 20px 24px;
+        }
+        
+        .sharabesh-about__quote-text {
+            font-size: 1rem;
+        }
+        
+        .sharabesh-about__features-grid {
+            grid-template-columns: 1fr;
+            gap: 8px;
+        }
+        
+        .sharabesh-about__service-title {
+            font-size: 1.2rem;
+        }
+        
+        .sharabesh-about__service {
+            padding-left: 12px;
+        }
+        
+        .sharabesh-about__service-list {
+            margin-left: 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .sharabesh-about {
+            padding: 50px 16px;
+        }
+        
+        .sharabesh-about__main-title {
+            font-size: 1.5rem;
+        }
+        
+        .sharabesh-about__section-title {
+            font-size: 1.3rem;
+        }
+        
+        .sharabesh-about__quote {
+            padding: 16px 20px;
+        }
+        
+        .sharabesh-about__quote-text {
+            font-size: 0.9rem;
+        }
+        
+        .sharabesh-about__paragraph {
+            font-size: 0.9rem;
+        }
+        
+        .sharabesh-about__feature-item {
+            font-size: 0.85rem;
+        }
+        
+        .sharabesh-about__service-title {
+            font-size: 1.1rem;
+        }
+        
+        .sharabesh-about__service-list li {
+            font-size: 0.85rem;
+        }
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@400;500;600;700;800&display=swap');

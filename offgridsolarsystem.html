@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Sharabesh Technologies & Energies | Premium Navbar</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/solutions.css">
+    <link rel="stylesheet" href="css/testimonial.css">
+    <link rel="stylesheet" href="css/trusted.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/homepagecss/homehero.css">
+    <link rel="stylesheet" href="css/homepagecss/homecontact.css">
+    <link rel="stylesheet" href="css/homepagecss/whychoose.css">
+    <link rel="stylesheet" href="css/homepagecss/process.css">
+   
+</head>
+<body>
+
+<!-- STICKY NAVIGATION BAR with actual logo image -->
+<nav class="navbar">
+    <div class="nav-container">
+        <!-- Left: Logo image (actual SVG data URI - solar/leaf icon) -->
+        <div class="logo-area">
+            <div class="logo-image">
+                <img class="logo-img" src="imagess/client logo.jpeg" alt="Sharabesh Technologies Logo">
+                <!-- <span class="logo-text-small">Sharabesh</span> -->
+            </div>
+        </div>
+
+        <!-- Hamburger button (mobile only) -->
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+       <!-- Desktop + Mobile Menu -->
+        <ul class="nav-menu" id="navMenu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Our Offerings <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="home.html">Home</a>
+                    <a href="commercial.html">Commercial</a>
+                    <a href="housingsociety.html">House Society</a>
+                  
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Solar Solutions <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="ongridsolarsystem.html">On Grid Solar System</a>
+                    <a href="offgridSolarsystem.html">Off Grid Solar System</a>
+                    
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">More <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Resources</a>
+                    <a href="#">Support</a>
+                </div>
+            </li>
+            <li class="nav-cta">
+                <a href="#" class="cta-primary">Get Free Solar Quote</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Overlay for mobile menu -->
+<div id="menuOverlay" class="menu-overlay"></div>
+
+
+<section class="breadcrumbs-hero">
+  <div class="breadcrumbs-overlay"></div>
+  <div class="breadcrumbs-container">
+    <div class="breadcrumbs-content">
+      <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb-list">
+          <li class="breadcrumb-item">
+            <a href="#" class="breadcrumb-link">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#" class="breadcrumb-link">Solar Solutions</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Housing Society Projects
+          </li>
+        </ol>
+      </nav>
+      
+      <div class="page-title-area">
+        <h1>Housing Society Solar Projects</h1>
+        <p>Explore our successful installations across India</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .breadcrumbs-hero {
+    position: relative;
+    background-image: url('https://placehold.co/1920x300/1e3a8a/ffffff?text=Solar+Panels+Banner');
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    padding: 3rem 2rem;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+  }
+  
+  /* Dark Overlay for better text readability */
+  .breadcrumbs-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 1;
+  }
+  
+  .breadcrumbs-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 2;
+  }
+  
+  .breadcrumbs-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Breadcrumb Navigation */
+  .breadcrumb-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .breadcrumb-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0.5rem;
+  }
+  
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+  }
+  
+  .breadcrumb-item:not(:last-child)::after {
+    content: "/";
+    margin-left: 0.5rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+  }
+  
+  .breadcrumb-link {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .breadcrumb-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  .breadcrumb-item.active {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    pointer-events: none;
+  }
+  
+  /* Page Title Area */
+  .page-title-area {
+    margin-top: 0.5rem;
+  }
+  
+  .page-title-area h1 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 0.5rem 0;
+    letter-spacing: -0.02em;
+  }
+  
+  .page-title-area p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    max-width: 600px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .breadcrumbs-hero {
+      padding: 2rem 1.25rem;
+      background-position: center 40%;
+    }
+    
+    .breadcrumb-item {
+      font-size: 0.7rem;
+    }
+    
+    .page-title-area h1 {
+      font-size: 1.5rem;
+    }
+    
+    .page-title-area p {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .breadcrumbs-hero {
+      padding: 1.5rem 1rem;
+    }
+    
+    .breadcrumb-item {
+      font-size: 0.65rem;
+    }
+    
+    .page-title-area h1 {
+      font-size: 1.3rem;
+    }
+    
+    .page-title-area p {
+      font-size: 0.75rem;
+    }
+  }
+</style>
+
+
+<section class="about-lead-section">
+  <div class="about-container">
+    <!-- LEFT SIDE - Content -->
+    <div class="about-content">
+      <h1 class="about-title">About SolarSquare</h1>
+      
+      <p class="about-description">
+        SolarSquare is born out of the passion to de-escalate pollution and escalate the adoption of mass solar. 
+        Two like-minded environment pros from IIT Bombay started SolarSquare in 2015 as a two-member pack. 
+        Now, we're the 3rd largest EPC contractor for residential installations in India. We've helped 25,000+ homes 
+        go solar and have been helping our customers save up to 90% on their monthly electricity bills.
+      </p>
+      
+      <p class="about-description">
+        We install both on-grid and hybrid solar systems. In the near future, we will start the installation of 
+        off-grid solar systems too. Some of the services that have set us apart from other vendors include the following.
+      </p>
+      
+      <ul class="about-bullets">
+        <li>✓ We offer free solar consultation services</li>
+        <li>✓ We use premium-quality prefabricated mounting structures that are resilient and durable enough to handle cyclonic wind speeds reaching up to 170 kmph</li>
+        <li>✓ We offer easy, 10-minute loan approval</li>
+        <li>✓ Our solar consultants and design team procures a 3D model of how solar would look on your rooftop within 15 minutes of the site survey</li>
+        <li>✓ We offer many EMI schemes; zero-cost being the most popular one</li>
+        <li>✓ We offer a 5-year AMC contract</li>
+      </ul>
+      
+      <p class="about-description highlight-mission">
+        We're on a mission to build a legacy brand that values its customers the most.
+      </p>
+      
+      <!-- Subsection 1: Overview -->
+      <div class="subsection">
+        <h3 class="subsection-title">Overview of an off grid solar system</h3>
+        <p class="subsection-text">
+          An off-grid solar system, also known as a standalone solar system, works on the same principle as an on-grid solar system: 
+          the PV cells capture the sunlight and convert it to electricity. However, the major difference is that there's no grid 
+          connection in the case of an off-grid solar power system. Instead, it uses batteries to store the electricity generated 
+          by the panels during sunshine hours.
+        </p>
+        <p class="subsection-text">
+          The off-grid solar system price in India is higher than that of an on-grid solar system price. Besides, maintaining 
+          off-grid solar systems takes more effort (and money) because batteries are involved and they have to be replaced 
+          periodically to keep the system functioning properly.
+        </p>
+        <p class="subsection-text">
+          To give you an idea of the cost, here are some demonstrative rates:
+        </p>
+        <div class="price-examples">
+          <span class="price-tag">3 kW off-grid solar system price in India: ₹2,40,000 onwards</span>
+          <span class="price-tag">5 kW off-grid solar system price in India: ₹4,50,000 onwards</span>
+        </div>
+        <p class="subsection-note">
+          *Please note: SolarSquare does not install off-grid solar systems. The off-grid solar panel prices listed above are standard market estimates.
+        </p>
+        <p class="subsection-text">
+          Ready to explore the workings of an off-grid solar system, all the price details, and whether you need to invest in off-grid solar 
+          as an Indian homeowner, especially because the Indian government offers a subsidy for the installation of an on-grid rooftop solar system? 
+          Dive in for all the details!
+        </p>
+      </div>
+      
+      <!-- Subsection 2: What is Off-Grid -->
+      <div class="subsection">
+        <h3 class="subsection-title">What is an Off-Grid Solar System?</h3>
+        <p class="subsection-text">
+          An off-grid solar system is a standalone set-up that produces and stores electricity without any connection to the public utility grid. 
+          How? It stores the power it generates in batteries.
+        </p>
+        <p class="subsection-text">
+          It's a careful set-up of the following components that work in tandem to produce electricity from sunlight:
+        </p>
+        <div class="components-list">
+          <span class="component-badge">Solar panels (modules)</span>
+          <span class="component-badge">Mounting structures</span>
+          <span class="component-badge">Batteries</span>
+          <span class="component-badge">Solar charge controller</span>
+          <span class="component-badge">Solar inverter</span>
+          <span class="component-badge">Solar accessories</span>
+        </div>
+      </div>
+      
+      <!-- Subsection 3: When to Use -->
+      <div class="subsection">
+        <h3 class="subsection-title">When to Use an Off-Grid Solar Panel System?</h3>
+        <p class="subsection-text">
+          Most Indian homes do not require off-grid solar systems, as their power consumption needs are met by on-grid rooftop solar systems, 
+          which are much cheaper and easier to maintain.
+        </p>
+        <p class="subsection-text">
+          However, you will need an off-grid solar system in the following situations:
+        </p>
+        <ul class="use-cases">
+          <li>📍 You live in a remote area with no utility grid</li>
+          <li>⚡ Your area faces extreme power cuts, and the grid is unreliable</li>
+        </ul>
+        <p class="subsection-text highlight-note">
+          However, if you live in an area with a reliable grid connection, the benefits of an on-grid solar system are unbeatable!
+        </p>
+      </div>
+      
+      <!-- Subsection 4: Components -->
+      <div class="subsection">
+        <h3 class="subsection-title">What Are the Components of an Off-Grid Solar System?</h3>
+        <p class="subsection-text">
+          Now, let's break down the entire off-grid solar system component by component so you can understand the role of each individual component in electricity generation.
+        </p>
+        
+        <h4 class="component-heading">#1. Solar panels</h4>
+        <p class="subsection-text">Solar panels are made up of solar cells.</p>
+        <div class="panel-types">
+          <div class="panel-type">
+            <strong>Monocrystalline</strong>
+            <span>When they're made of one single silicon crystal</span>
+          </div>
+          <div class="panel-type">
+            <strong>Polycrystalline</strong>
+            <span>When they're made of multiple silicon crystals</span>
+          </div>
+          <div class="panel-type">
+            <strong>Bifacial</strong>
+            <span>When they have solar panels on the front as well as the rear</span>
+          </div>
+        </div>
+        <p class="subsection-text">
+          Off-grid solar panels trap sunlight and convert it into DC electricity. The one thing that should be taken care of at the time of 
+          installation is that shadows should not cloud the panels.
+        </p>
+        
+        <h4 class="component-heading">#2. Solar inverter</h4>
+        <p class="subsection-text">
+          The power from solar panels is in the form of direct current. Home appliances run on AC power. This is where the solar inverter 
+          comes into the picture. It converts DC power into AC power. An off-grid solar inverter, just like an on-grid inverter, is the 
+          heart of the solar system.
+        </p>
+        
+        <h4 class="component-heading">#3. Batteries</h4>
+        <p class="subsection-text">Off-grid solar functions on batteries.</p>
+        <ul class="simple-list">
+          <li>During the sunshine hours, the electricity that the panels are producing is used to run the house.</li>
+          <li>Whatever is extra is used to charge the batteries.</li>
+          <li>That same power from the battery is then used to keep the house running at night.</li>
+        </ul>
+        
+        <h4 class="component-heading">#4. Charge controller</h4>
+        <p class="subsection-text">The charge controller in an off-grid solar system controls the charge.</p>
+        <ul class="simple-list">
+          <li>The panels produce electricity.</li>
+          <li>The electricity then goes into the charge controller.</li>
+          <li>The charge controller feeds power into the inverter as well as uses the extra units to charge the batteries.</li>
+        </ul>
+        
+        <h4 class="component-heading">#5. Mounting structures</h4>
+        <p class="subsection-text">
+          You have the panels and the inverter, but the system cannot be set up without proper mounting structures. The mounting structures 
+          should be at a proper tilt angle (near perpendicular to the sun for as long as possible) so that they receive maximum sunlight.
+        </p>
+        
+        <h4 class="component-heading">#6. Solar accessories</h4>
+        <p class="subsection-text">
+          You know the major components of an off-grid solar system, but there are other accessories without which the system will not be safe. 
+          Here are the accessories we're talking about:
+        </p>
+        <div class="components-list">
+          <span class="component-badge">DC cables and DC combiner box</span>
+          <span class="component-badge">AC cables and AC combiner box</span>
+          <span class="component-badge">MC4 connectors</span>
+          <span class="component-badge">Earthing strips and conduit trays</span>
+          <span class="component-badge">Lightning arrester</span>
+        </div>
+      </div>
+      
+      <!-- Subsection 5: How Does Off-Grid Solar Work -->
+      <div class="subsection">
+        <h3 class="subsection-title">How Does Off-Grid Solar Work?</h3>
+        <p class="subsection-text">
+          As you can see, it takes a fleet of components to produce electricity from sunlight in a usable form (AC). 
+          Here's a step-by-step breakdown of this process for easy understanding.
+        </p>
+        
+        <div class="step-item">
+          <strong>Step 1:</strong> Sunlight Absorption & Electron Excitation Through Solar Panels
+        </div>
+        <div class="step-item">
+          <strong>Step 2:</strong> String Aggregation & Safety Protection Through a Combiner Box
+        </div>
+        <div class="step-item">
+          <strong>Step 3:</strong> Maximum Power Point Tracking & Charge Regulation Through a Solar Charge Controller
+        </div>
+        <div class="step-item">
+          <strong>Step 4:</strong> Battery Bank Charging
+        </div>
+        <div class="step-item">
+          <strong>Step 5:</strong> Intelligent Coordination (Controller ↔ Inverter Communication)
+        </div>
+        <div class="step-item">
+          <strong>Step 6:</strong> DC-to-AC Conversion Through an Off-Grid Inverter
+        </div>
+        <div class="step-item">
+          <strong>Step 7:</strong> Household Power Delivery
+        </div>
+      </div>
+      
+      <!-- Subsection 6: Price in India -->
+      <div class="subsection">
+        <h3 class="subsection-title">What's the Off-Grid Solar System Price in India in 2025?</h3>
+        <p class="subsection-text">
+          The off-grid solar system price in India varies based on factors such as:
+        </p>
+        <ul class="simple-list">
+          <li>The system capacity</li>
+          <li>The type of solar panels</li>
+          <li>The type of solar inverter</li>
+          <li>Types of batteries (12 volt, 24 volt, or 48 volt)</li>
+        </ul>
+        
+        <div class="price-table">
+          <div class="price-row header">
+            <span>System Capacity</span>
+            <span>Off-Grid Solar System Price (Approx.)</span>
+          </div>
+          <div class="price-row"><span>1 kW</span><span>₹85,000 - ₹1,00,000</span></div>
+          <div class="price-row"><span>2 kW</span><span>₹1,70,000 - ₹2,00,000</span></div>
+          <div class="price-row"><span>3 kW</span><span>₹2,55,000 - ₹3,00,000</span></div>
+          <div class="price-row"><span>4 kW</span><span>₹3,40,000 - ₹4,00,000</span></div>
+          <div class="price-row"><span>5 kW</span><span>₹4,25,000 - ₹5,00,000</span></div>
+        </div>
+        <p class="subsection-note">
+          *Please note: SolarSquare does not install off-grid solar systems. The off-grid solar panel prices listed above are standard market estimates.
+        </p>
+      </div>
+      
+      <!-- Subsection 7: Subsidy -->
+      <div class="subsection">
+        <h3 class="subsection-title">What About Off-Grid Solar System Subsidy?</h3>
+        <p class="subsection-text">
+          To clear the air once and for all, the Indian government does not offer a subsidy on off-grid solar systems under the 
+          PM Surya Ghar Muft Bijli Yojana. You need to install an on-grid rooftop solar system to receive the financial assistance 
+          the government offers in the form of a subsidy.
+        </p>
+      </div>
+      
+      <!-- Subsection 8: Advantages & Disadvantages -->
+      <div class="subsection">
+        <h3 class="subsection-title">Advantages and Disadvantages of Installing Off-Grid Solar Systems in India?</h3>
+        <p class="subsection-text">Here's a clear breakdown of the benefits of installing off-grid solar power systems in India:</p>
+        <ul class="simple-list">
+          <li><strong>Power Where You Need It:</strong> An off-grid solar system is the only option in rural areas where there is no grid</li>
+          <li><strong>Zero-emission Energy Source:</strong> Off-grid solar power is clean and green</li>
+        </ul>
+        <p class="subsection-text"><strong>ROI (return on investment)</strong> in the case of off-grid solar systems takes more time than an on-grid system of the same capacity. Why? Well, because batteries are expensive.</p>
+        <ul class="simple-list">
+          <li>Usually, the off-grid solar system price breaks even in about 6-7 years.</li>
+          <li>In the case of an on-grid solar system, the price breaks even in 3-4 years.</li>
+        </ul>
+        <p class="subsection-text">Here are a few other limitations of installing off-grid solar in India:</p>
+        <ul class="simple-list">
+          <li>Repeated investment in batteries since they have to be replaced after their life is over</li>
+          <li>Higher maintenance cost since they have to be replaced after their life is over</li>
+          <li>There's no subsidy offered to bring down the cost of installing off-grid solar systems</li>
+        </ul>
+      </div>
+      
+      <!-- Subsection 9: On-Grid vs Off-Grid -->
+      <div class="subsection">
+        <h3 class="subsection-title">On-Grid vs Off-Grid Solar: Which is Better and Why?</h3>
+        <p class="subsection-text">
+          This is a major debate, but the choice is simple. If you live in an area with a reliable grid, you should opt for an on-grid solar system because:
+        </p>
+        <ul class="simple-list">
+          <li>It costs less than off-grid solar</li>
+          <li>It requires less maintenance since batteries are not involved</li>
+          <li>The government offers a handsome subsidy for installing on-grid solar, ranging between ₹30,000 and ₹78,000 (based on the system capacity being installed)</li>
+          <li>If your system generates more power than what you consume, you earn credits from your discom</li>
+        </ul>
+        <p class="subsection-text">
+          To give you an idea of how cost-effective an on-grid system is, here are the estimated prices after you avail of a subsidy:
+        </p>
+        <ul class="simple-list">
+          <li>Starting price for a 2 kWp system: ~ ₹90,000 in Pune to ~ ₹1,45,000 in Chennai</li>
+          <li>Starting price for a 3 kWp system: ~ ₹1,02,000 in Lucknow to ~ ₹1,57,000 in Bengaluru</li>
+          <li>Starting price for a 4 kWp system: ~ ₹1,47,000 in Lucknow to ~ ₹2,12,000 in Chennai</li>
+          <li>Starting price for a 5 kWp system: ~ ₹1,97,000 in Lucknow to ~ ₹2,92,000 in Bengaluru</li>
+          <li>Starting price for a 10 kWp system: ~ ₹4,72,000 in Lucknow to ~ ₹5,62,000 in Bengaluru</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- RIGHT SIDE - Compact Form Card (Sticky) -->
+    <div class="form-card">
+      <div class="form-header">
+        <h3>Book a <span class="highlight-green">FREE Solar Consultation</span></h3>
+        <p>And save up to ₹75,000 with subsidy</p>
+      </div>
+      
+      <div class="form-tabs">
+        <button class="tab-btn active" data-tab="residential">Residential</button>
+        <button class="tab-btn" data-tab="society">Housing Society</button>
+        <button class="tab-btn" data-tab="commercial">Commercial</button>
+      </div>
+      
+      <form class="lead-form" id="leadForm">
+        <!-- Common Fields for all tabs -->
+        <div class="form-group">
+          <input type="text" id="fullName" placeholder="Full Name" required>
+        </div>
+        
+        <div class="form-group">
+          <input type="tel" id="whatsappNumber" placeholder="WhatsApp Number" required>
+        </div>
+        
+        <div class="form-group">
+          <input type="text" id="pinCode" placeholder="Pin Code" required>
+        </div>
+        
+        <!-- Residential Fields (Default visible) -->
+        <div id="residentialFields" class="tab-fields active-fields">
+          <div class="form-group">
+            <label class="form-label">What is your average monthly bill?</label>
+            <div class="bill-options">
+              <button type="button" class="bill-btn">Less than ₹1500</button>
+              <button type="button" class="bill-btn">₹1500 – ₹2500</button>
+              <button type="button" class="bill-btn">₹2500 – ₹4000</button>
+              <button type="button" class="bill-btn">₹4000 – ₹8000</button>
+              <button type="button" class="bill-btn">More than ₹8000</button>
+            </div>
+            <input type="hidden" id="selectedBill" name="monthlyBill">
+          </div>
+        </div>
+        
+        <!-- Housing Society Fields (Hidden by default) -->
+        <div id="societyFields" class="tab-fields">
+          <div class="form-group">
+            <input type="text" placeholder="Society Name" id="societyName">
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Number of Flats / Units" id="totalFlats">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Current Monthly Common Area Bill</label>
+            <div class="bill-options-society">
+              <button type="button" class="society-bill-btn">Less than ₹10,000</button>
+              <button type="button" class="society-bill-btn">₹10,000 – ₹25,000</button>
+              <button type="button" class="society-bill-btn">₹25,000 – ₹50,000</button>
+              <button type="button" class="society-bill-btn">₹50,000 – ₹1,00,000</button>
+              <button type="button" class="society-bill-btn">More than ₹1,00,000</button>
+            </div>
+            <input type="hidden" id="selectedSocietyBill" name="societyBill">
+          </div>
+        </div>
+        
+        <!-- Commercial Fields (Hidden by default) -->
+        <div id="commercialFields" class="tab-fields">
+          <div class="form-group">
+            <input type="text" placeholder="Business / Organization Name" id="businessName">
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Type of Business" id="businessType">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Average Monthly Electricity Bill</label>
+            <div class="bill-options-commercial">
+              <button type="button" class="commercial-bill-btn">Less than ₹25,000</button>
+              <button type="button" class="commercial-bill-btn">₹25,000 – ₹50,000</button>
+              <button type="button" class="commercial-bill-btn">₹50,000 – ₹1,00,000</button>
+              <button type="button" class="commercial-bill-btn">₹1,00,000 – ₹2,50,000</button>
+              <button type="button" class="commercial-bill-btn">More than ₹2,50,000</button>
+            </div>
+            <input type="hidden" id="selectedCommercialBill" name="commercialBill">
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Connected Load (kW / HP)" id="connectedLoad">
+          </div>
+        </div>
+        
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" required>
+            <span>I agree to <a href="#">terms of service</a> & <a href="#">privacy policy</a></span>
+          </label>
+        </div>
+        
+        <button type="submit" class="submit-btn">Submit Details →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-lead-section {
+    background: #ffffff;
+    padding: 60px 2rem;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  }
+  
+  .about-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  
+  /* LEFT SIDE */
+  .about-content {
+    flex: 1.5;
+  }
+  
+  .about-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1B5E20;
+    margin: 0 0 1rem 0;
+    letter-spacing: -0.02em;
+  }
+  
+  .about-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 1rem;
+  }
+  
+  .highlight-mission {
+    font-weight: 600;
+    color: #1B5E20;
+    margin: 1rem 0;
+    padding: 0.75rem;
+    background: #e8f5e9;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  
+  .about-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .about-bullets li {
+    font-size: 0.85rem;
+    color: #4b5563;
+    padding: 0.35rem 0;
+    line-height: 1.4;
+  }
+  
+  /* Subsections */
+  .subsection {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .subsection:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .subsection-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1B5E20;
+    margin: 0 0 0.75rem 0;
+  }
+  
+  .subsection-text {
+    font-size: 0.85rem;
+    line-height: 1.55;
+    color: #4b5563;
+    margin: 0 0 0.75rem 0;
+  }
+  
+  .subsection-note {
+    font-size: 0.8rem;
+    color: #ef4444;
+    font-style: italic;
+    margin: 0.5rem 0;
+  }
+  
+  .highlight-note {
+    background: #fef3c7;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    color: #92400e;
+  }
+  
+  .component-heading {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1B5E20;
+    margin: 1rem 0 0.25rem 0;
+  }
+  
+  .price-examples {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 0.75rem 0;
+  }
+  
+  .price-tag {
+    background: #e8f5e9;
+    color: #1B5E20;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+  }
+  
+  .components-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.75rem 0;
+  }
+  
+  .component-badge {
+    background: #f3f4f6;
+    color: #374151;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.7rem;
+    border-radius: 50px;
+  }
+  
+  .use-cases, .simple-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0.75rem 0;
+  }
+  
+  .use-cases li, .simple-list li {
+    font-size: 0.85rem;
+    color: #4b5563;
+    padding: 0.25rem 0;
+    line-height: 1.4;
+  }
+  
+  .panel-types {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+  }
+  
+  .panel-type {
+    background: #f9fafb;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    flex: 1;
+    min-width: 120px;
+  }
+  
+  .panel-type strong {
+    display: block;
+    font-size: 0.85rem;
+    color: #1B5E20;
+    margin-bottom: 0.2rem;
+  }
+  
+  .panel-type span {
+    font-size: 0.7rem;
+    color: #6b7280;
+  }
+  
+  .step-item {
+    font-size: 0.85rem;
+    color: #4b5563;
+    padding: 0.3rem 0;
+    border-left: 3px solid #2ECC71;
+    padding-left: 0.75rem;
+    margin: 0.3rem 0;
+  }
+  
+  .price-table {
+    margin: 1rem 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.8rem;
+  }
+  
+  .price-row:last-child {
+    border-bottom: none;
+  }
+  
+  .price-row.header {
+    background: #1B5E20;
+    color: white;
+    font-weight: 600;
+  }
+  
+  /* RIGHT SIDE - Compact Sticky Form */
+  .form-card {
+    flex: 0.9;
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e5e7eb;
+    position: sticky;
+    top: 20px;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .form-card::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .form-card::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .form-card::-webkit-scrollbar-thumb {
+    background: #2ECC71;
+    border-radius: 10px;
+  }
+  
+  .form-header {
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
+  
+  .form-header h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 0.2rem 0;
+  }
+  
+  .highlight-green {
+    color: #2ECC71;
+  }
+  
+  .form-header p {
+    font-size: 0.7rem;
+    color: #6b7280;
+    margin: 0;
+  }
+  
+  .form-tabs {
+    display: flex;
+    background: #f3f4f6;
+    border-radius: 0.6rem;
+    padding: 0.2rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .tab-btn {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 0.4rem 0.3rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #6b7280;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+  }
+  
+  .tab-btn.active {
+    background: white;
+    color: #2ECC71;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-group {
+    margin-bottom: 0.6rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.6rem;
+    font-size: 0.75rem;
+    transition: all 0.2s ease;
+    background: #f9fafb;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #2ECC71;
+    background: white;
+    box-shadow: 0 0 0 2px rgba(46, 204, 113, 0.1);
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Tab Fields */
+  .tab-fields {
+    display: none;
+  }
+  
+  .tab-fields.active-fields {
+    display: block;
+  }
+  
+  /* Bill Options */
+  .bill-options, .bill-options-society, .bill-options-commercial {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+  
+  .bill-btn, .society-bill-btn, .commercial-bill-btn {
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    padding: 0.35rem 0.6rem;
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: #4b5563;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .bill-btn.selected, .society-bill-btn.selected, .commercial-bill-btn.selected {
+    background: #2ECC71;
+    border-color: #2ECC71;
+    color: white;
+  }
+  
+  .checkbox-group {
+    margin: 0.6rem 0;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.6rem;
+    color: #6b7280;
+    cursor: pointer;
+  }
+  
+  .checkbox-label input {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    accent-color: #2ECC71;
+  }
+  
+  .checkbox-label a {
+    color: #2ECC71;
+    text-decoration: none;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    background: #2ECC71;
+    color: white;
+    border: none;
+    padding: 0.7rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #1B5E20;
+    transform: translateY(-1px);
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .about-container {
+      gap: 1.5rem;
+    }
+    
+    .form-card {
+      flex: 1;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .about-container {
+      flex-direction: column;
+    }
+    
+    .form-card {
+      position: static;
+      width: 100%;
+      max-width: 450px;
+      margin: 0 auto;
+    }
+    
+    .about-lead-section {
+      padding: 40px 1.5rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .about-lead-section {
+      padding: 30px 1rem;
+    }
+    
+    .about-title {
+      font-size: 1.3rem;
+    }
+    
+    .subsection-title {
+      font-size: 1rem;
+    }
+    
+    .price-examples {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .price-tag {
+      text-align: center;
+    }
+    
+    .panel-types {
+      flex-direction: column;
+    }
+    
+    .price-row {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>
+
+<script>
+  // Tab switching with dynamic fields
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const residentialFields = document.getElementById('residentialFields');
+  const societyFields = document.getElementById('societyFields');
+  const commercialFields = document.getElementById('commercialFields');
+  
+  // Function to switch tabs
+  function switchTab(tabType) {
+    // Hide all tab fields
+    residentialFields.classList.remove('active-fields');
+    societyFields.classList.remove('active-fields');
+    commercialFields.classList.remove('active-fields');
+    
+    // Show selected tab fields
+    if (tabType === 'residential') {
+      residentialFields.classList.add('active-fields');
+      // Make residential fields required
+      document.getElementById('selectedBill').required = true;
+      document.getElementById('societyName').required = false;
+      document.getElementById('totalFlats').required = false;
+      document.getElementById('businessName').required = false;
+      document.getElementById('businessType').required = false;
+      document.getElementById('connectedLoad').required = false;
+    } else if (tabType === 'society') {
+      societyFields.classList.add('active-fields');
+      document.getElementById('selectedBill').required = false;
+      document.getElementById('societyName').required = true;
+      document.getElementById('totalFlats').required = true;
+      document.getElementById('businessName').required = false;
+      document.getElementById('businessType').required = false;
+      document.getElementById('connectedLoad').required = false;
+    } else if (tabType === 'commercial') {
+      commercialFields.classList.add('active-fields');
+      document.getElementById('selectedBill').required = false;
+      document.getElementById('societyName').required = false;
+      document.getElementById('totalFlats').required = false;
+      document.getElementById('businessName').required = true;
+      document.getElementById('businessType').required = true;
+      document.getElementById('connectedLoad').required = true;
+    }
+  }
+  
+  // Tab click handlers
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      tabBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      
+      const tabType = this.getAttribute('data-tab');
+      switchTab(tabType);
+    });
+  });
+  
+  // Bill option selection for Residential
+  const billBtns = document.querySelectorAll('.bill-btn');
+  const selectedBillInput = document.getElementById('selectedBill');
+  
+  billBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      billBtns.forEach(b => b.classList.remove('selected'));
+      this.classList.add('selected');
+      selectedBillInput.value = this.textContent;
+    });
+  });
+  
+  // Bill option selection for Society
+  const societyBillBtns = document.querySelectorAll('.society-bill-btn');
+  const selectedSocietyBillInput = document.getElementById('selectedSocietyBill');
+  
+  societyBillBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      societyBillBtns.forEach(b => b.classList.remove('selected'));
+      this.classList.add('selected');
+      selectedSocietyBillInput.value = this.textContent;
+    });
+  });
+  
+  // Bill option selection for Commercial
+  const commercialBillBtns = document.querySelectorAll('.commercial-bill-btn');
+  const selectedCommercialBillInput = document.getElementById('selectedCommercialBill');
+  
+  commercialBillBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      commercialBillBtns.forEach(b => b.classList.remove('selected'));
+      this.classList.add('selected');
+      selectedCommercialBillInput.value = this.textContent;
+    });
+  });
+  
+  // Get active tab
+  function getActiveTab() {
+    const activeBtn = document.querySelector('.tab-btn.active');
+    return activeBtn ? activeBtn.getAttribute('data-tab') : 'residential';
+  }
+  
+  // Build WhatsApp message
+  function buildWhatsAppMessage() {
+    const fullName = document.getElementById('fullName').value;
+    const whatsappNumber = document.getElementById('whatsappNumber').value;
+    const pinCode = document.getElementById('pinCode').value;
+    const activeTab = getActiveTab();
+    
+    let message = `🌞 *Solar Consultation Request* 🌞\n\n`;
+    message += `*Name:* ${fullName}\n`;
+    message += `*WhatsApp:* ${whatsappNumber}\n`;
+    message += `*Pin Code:* ${pinCode}\n`;
+    message += `*Category:* ${activeTab.toUpperCase()}\n\n`;
+    
+    if (activeTab === 'residential') {
+      const monthlyBill = selectedBillInput.value || 'Not specified';
+      message += `*Monthly Bill:* ${monthlyBill}\n`;
+    } else if (activeTab === 'society') {
+      const societyName = document.getElementById('societyName').value;
+      const totalFlats = document.getElementById('totalFlats').value;
+      const societyBill = selectedSocietyBillInput.value || 'Not specified';
+      message += `*Society Name:* ${societyName}\n`;
+      message += `*Total Flats:* ${totalFlats}\n`;
+      message += `*Common Area Bill:* ${societyBill}\n`;
+    } else if (activeTab === 'commercial') {
+      const businessName = document.getElementById('businessName').value;
+      const businessType = document.getElementById('businessType').value;
+      const commercialBill = selectedCommercialBillInput.value || 'Not specified';
+      const connectedLoad = document.getElementById('connectedLoad').value;
+      message += `*Business Name:* ${businessName}\n`;
+      message += `*Business Type:* ${businessType}\n`;
+      message += `*Monthly Bill:* ${commercialBill}\n`;
+      message += `*Connected Load:* ${connectedLoad}\n`;
+    }
+    
+    message += `\n_Request submitted via website form_`;
+    return encodeURIComponent(message);
+  }
+  
+  // Form submission - WhatsApp redirect
+  const form = document.getElementById('leadForm');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Validate required fields
+      const fullName = document.getElementById('fullName').value;
+      const whatsappNumber = document.getElementById('whatsappNumber').value;
+      const pinCode = document.getElementById('pinCode').value;
+      const termsCheckbox = document.querySelector('.checkbox-group input[type="checkbox"]');
+      
+      if (!fullName || !whatsappNumber || !pinCode) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+      
+      if (!termsCheckbox.checked) {
+        alert('Please agree to the terms of service & privacy policy.');
+        return;
+      }
+      
+      const activeTab = getActiveTab();
+      
+      if (activeTab === 'residential' && !selectedBillInput.value) {
+        alert('Please select your average monthly bill.');
+        return;
+      }
+      
+      if (activeTab === 'society') {
+        const societyName = document.getElementById('societyName').value;
+        const totalFlats = document.getElementById('totalFlats').value;
+        if (!societyName || !totalFlats) {
+          alert('Please fill in Society Name and Number of Flats.');
+          return;
+        }
+        if (!selectedSocietyBillInput.value) {
+          alert('Please select your current monthly common area bill.');
+          return;
+        }
+      }
+      
+      if (activeTab === 'commercial') {
+        const businessName = document.getElementById('businessName').value;
+        const businessType = document.getElementById('businessType').value;
+        const connectedLoad = document.getElementById('connectedLoad').value;
+        if (!businessName || !businessType || !connectedLoad) {
+          alert('Please fill in Business Name, Business Type, and Connected Load.');
+          return;
+        }
+        if (!selectedCommercialBillInput.value) {
+          alert('Please select your average monthly electricity bill.');
+          return;
+        }
+      }
+      
+      // Build and redirect to WhatsApp
+      const message = buildWhatsAppMessage();
+      const whatsappURL = `https://wa.me/919789029012?text=${message}`;
+      window.open(whatsappURL, '_blank');
+      
+      // Reset form
+      form.reset();
+      billBtns.forEach(b => b.classList.remove('selected'));
+      societyBillBtns.forEach(b => b.classList.remove('selected'));
+      commercialBillBtns.forEach(b => b.classList.remove('selected'));
+      selectedBillInput.value = '';
+      selectedSocietyBillInput.value = '';
+      selectedCommercialBillInput.value = '';
+      
+      // Reset to residential tab
+      tabBtns.forEach(b => b.classList.remove('active'));
+      tabBtns[0].classList.add('active');
+      switchTab('residential');
+    });
+  }
+</script>
+
+
+
+<footer class="sharabesh-footer">
+    <div class="sharabesh-footer__container">
+        <!-- Top Section: 3 Columns -->
+        <div class="sharabesh-footer__grid">
+            <!-- Left Column: Logo, Tagline, Contact, Social -->
+            <div class="sharabesh-footer__col">
+                <div class="sharabesh-footer__logo">
+                    <div class="sharabesh-footer__logo-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <span class="sharabesh-footer__logo-text">Sharabesh Technologies & Energies</span>
+                </div>
+                <p class="sharabesh-footer__tagline">Powering a sustainable tomorrow, today.</p>
+                
+                <div class="sharabesh-footer__contact">
+                    <div class="sharabesh-footer__contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 1800 123 4567</span>
+                    </div>
+                    <div class="sharabesh-footer__contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@sharabeshenergy.com</span>
+                    </div>
+                    <div class="sharabesh-footer__contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon - Sat: 9:00 AM - 7:00 PM</span>
+                    </div>
+                </div>
+                
+                <div class="sharabesh-footer__social">
+                    <a href="#" class="sharabesh-footer__social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="sharabesh-footer__social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="sharabesh-footer__social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="sharabesh-footer__social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="sharabesh-footer__social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <!-- Middle Column: Our Solutions & Quick Links (2x2 on mobile) -->
+            <div class="sharabesh-footer__col sharabesh-footer__col--links">
+                <div class="sharabesh-footer__links-wrapper">
+                    <div class="sharabesh-footer__links-group">
+                        <h4 class="sharabesh-footer__heading">Our Solutions</h4>
+                        <ul class="sharabesh-footer__links">
+                            <li><a href="#">Residential Solar</a></li>
+                            <li><a href="#">Commercial Solar</a></li>
+                            <li><a href="#">Industrial Solar</a></li>
+                            <li><a href="#">Solar for Societies</a></li>
+                            <li><a href="#">Energy Storage</a></li>
+                            <li><a href="#">EV Charging</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sharabesh-footer__links-group">
+                        <h4 class="sharabesh-footer__heading">Quick Links</h4>
+                        <ul class="sharabesh-footer__links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Get a Quote</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column: Address -->
+            <div class="sharabesh-footer__col">
+                <h4 class="sharabesh-footer__heading">Our Presence</h4>
+                <div class="sharabesh-footer__address">
+                    <div class="sharabesh-footer__address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Bengaluru (HQ)</strong><br>
+                            #45, Electronic City Phase 1,<br>
+                            Bengaluru - 560100
+                        </div>
+                    </div>
+                    <div class="sharabesh-footer__address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Mumbai</strong><br>
+                            BKC, Bandra East,<br>
+                            Mumbai - 400051
+                        </div>
+                    </div>
+                    <div class="sharabesh-footer__address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Delhi NCR</strong><br>
+                            Sector 44, Gurugram,<br>
+                            Haryana - 122002
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Section: Copyright & Legal Links -->
+        <div class="sharabesh-footer__bottom">
+            <div class="sharabesh-footer__bottom-left">
+                <span class="sharabesh-footer__made-in">Proudly made in India <i class="fas fa-heart"></i></span>
+            </div>
+            <div class="sharabesh-footer__bottom-right">
+                <a href="#">Privacy Policy</a>
+                <span class="sharabesh-footer__separator">|</span>
+                <a href="#">Terms of Service</a>
+                <span class="sharabesh-footer__separator">|</span>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+<script src="js/navbar.js"></script>
+<script src="js/homepagejs/hero.js"></script>
+<script src="js/homepagejs/homecontact.js"></script>
+<script src="js/testimonial.js"></script>
+<script src="js/blog.js"></script>
+</html>

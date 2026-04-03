@@ -1,0 +1,177 @@
+homepage hero section
+<section class="sharabesh-feature-carousel">
+    <div class="feature-track" id="featureTrack">
+        
+        <div class="feature-slide">
+            <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=2070&auto=format&fit=crop');"></div>
+            <div class="slide-overlay"></div>
+            <div class="feature-container">
+                <div class="feature-content">
+                    <span class="feature-badge">⚡ Engineered for Excellence</span>
+                    <h2 class="feature-title">Cyclone-proof solar systems</h2>
+                    <p class="feature-description">Our Sharabesh WindPro Mount™ is so well built it can handle heavy rain, scary storms and even cyclones with 170 kmph wind speeds.</p>
+                    <a href="#" class="feature-btn">Get a quote →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-slide">
+            <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=2075&auto=format&fit=crop');"></div>
+            <div class="slide-overlay"></div>
+            <div class="feature-container">
+                <div class="feature-content">
+                    <span class="feature-badge">🛡️ Trusted Protection</span>
+                    <h2 class="feature-title">10-Year Leak Proof Warranty</h2>
+                    <p class="feature-description">We take full responsibility for your roof. Our specialized mounting ensures zero leakage and complete structural peace of mind.</p>
+                    <a href="#" class="feature-btn">Learn More →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-slide">
+            <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=1974&auto=format&fit=crop');"></div>
+            <div class="slide-overlay"></div>
+            <div class="feature-container">
+                <div class="feature-content">
+                    <span class="feature-badge">📊 Next-Gen Tech</span>
+                    <h2 class="feature-title">Real-time Smart Monitoring</h2>
+                    <p class="feature-description">Track your energy generation and savings from anywhere in the world with the Sharabesh Smart App.</p>
+                    <a href="#" class="feature-btn">View App Demo →</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    .sharabesh-feature-carousel {
+        position: relative;
+        width: 100%;
+        height: 70vh; /* Reduced desktop height */
+        min-height: 500px;
+        overflow: hidden;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .feature-track {
+        display: flex;
+        width: 300%;
+        height: 100%;
+        transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+    }
+
+    .feature-slide {
+        width: 33.333%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .slide-bg {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .slide-overlay {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: linear-gradient(135deg, rgba(13, 27, 76, 0.85), rgba(27, 94, 32, 0.75));
+        z-index: 1;
+    }
+
+    .feature-container {
+        position: relative;
+        z-index: 2;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 40px;
+        width: 100%;
+    }
+
+    .feature-content { max-width: 650px; color: white; }
+
+    .feature-badge {
+        display: inline-block;
+        background: rgba(46, 204, 113, 0.2);
+        padding: 6px 16px;
+        border-radius: 40px;
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+        border: 1px solid rgba(46, 204, 113, 0.3);
+    }
+
+    .feature-title {
+        font-size: clamp(2rem, 4vw, 3.2rem);
+        font-weight: 800;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+
+    .feature-description {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        opacity: 0.9;
+    }
+
+    .feature-btn {
+        background: #2ECC71;
+        color: white;
+        padding: 14px 36px;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: 700;
+        display: inline-block;
+        transition: 0.3s;
+    }
+
+    .feature-btn:hover { background: #1B5E20; transform: translateY(-3px); }
+
+    /* MOBILE: Increased Height and Centering */
+    @media (max-width: 768px) {
+        .sharabesh-feature-carousel {
+            height: 85vh; /* Increased height for mobile */
+        }
+        .feature-container {
+            padding: 0 24px;
+            text-align: center;
+        }
+        .feature-content {
+            margin: 0 auto;
+        }
+        .feature-title {
+            font-size: 2.2rem;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const track = document.getElementById('featureTrack');
+        let index = 0;
+
+        function rotateFeatures() {
+            index++;
+            if (index > 2) index = 0;
+            
+            // Move track based on 33.333% per slide
+            track.style.transform = `translateX(-${index * 33.333}%)`;
+        }
+
+        // Auto-scroll every 3 seconds
+        setInterval(rotateFeatures, 3000);
+    });
+</script>
+
+
+
+
+
+
+
+
+

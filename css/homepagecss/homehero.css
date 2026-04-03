@@ -1,0 +1,324 @@
+
+    /* Premium 3-Slide Carousel - Sharabesh Theme */
+    .sharabesh-premium-carousel {
+        position: relative;
+        width: 100%;
+        height: 85vh;           /* Slightly reduced on desktop (was 100vh) */
+        min-height: 550px;
+        max-height: 700px;
+        overflow: hidden;
+        font-family: 'Inter', 'Poppins', system-ui, -apple-system, sans-serif;
+    }
+
+    .sharabesh-premium-carousel__container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sharabesh-premium-carousel__slides {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sharabesh-premium-carousel__slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+    }
+
+    .sharabesh-premium-carousel__slide.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+    }
+
+    .sharabesh-premium-carousel__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Gradient Overlay (dark blue + green blend) */
+    .sharabesh-premium-carousel__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(13, 27, 76, 0.88), rgba(27, 94, 32, 0.82));
+        z-index: 2;
+    }
+
+    /* Content */
+    .sharabesh-premium-carousel__content {
+        position: relative;
+        z-index: 3;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 24px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: white;
+    }
+
+    .sharabesh-premium-carousel__badge {
+        display: inline-block;
+        background: rgba(46, 204, 113, 0.15);
+        backdrop-filter: blur(4px);
+        padding: 6px 18px;
+        border-radius: 40px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #A5D6A7;
+        margin-bottom: 24px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.5px;
+        border: 1px solid rgba(46, 204, 113, 0.3);
+    }
+
+    .sharabesh-premium-carousel__title {
+        font-size: 3rem;
+        font-weight: 800;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        max-width: 650px;
+    }
+
+    .sharabesh-premium-carousel__description {
+        font-size: 1rem;
+        color: rgba(255,255,255,0.9);
+        line-height: 1.6;
+        margin-bottom: 32px;
+        font-family: 'Inter', sans-serif;
+        max-width: 550px;
+    }
+
+    .sharabesh-premium-carousel__btn {
+        display: inline-block;
+        background: #2ECC71;
+        color: white;
+        padding: 14px 36px;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        font-family: 'Poppins', sans-serif;
+        box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4);
+    }
+
+    .sharabesh-premium-carousel__btn:hover {
+        background: #1B5E20;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(27, 94, 32, 0.5);
+    }
+
+    /* Navigation Dots */
+    .sharabesh-premium-carousel__dots {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 12px;
+        z-index: 10;
+    }
+
+    .sharabesh-premium-carousel__dots .dot {
+        width: 12px;
+        height: 12px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .sharabesh-premium-carousel__dots .dot.active {
+        width: 32px;
+        border-radius: 10px;
+        background: #2ECC71;
+    }
+
+    /* Prev/Next Buttons */
+    .sharabesh-premium-carousel__prev,
+    .sharabesh-premium-carousel__next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        border: none;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: white;
+        transition: all 0.3s ease;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sharabesh-premium-carousel__prev {
+        left: 20px;
+    }
+
+    .sharabesh-premium-carousel__next {
+        right: 20px;
+    }
+
+    .sharabesh-premium-carousel__prev:hover,
+    .sharabesh-premium-carousel__next:hover {
+        background: #2ECC71;
+        transform: translateY(-50%) scale(1.1);
+    }
+
+    /* Desktop Large Screens */
+    @media (min-width: 1280px) {
+        .sharabesh-premium-carousel {
+            height: 80vh;           /* Slightly reduced */
+            min-height: 550px;
+            max-height: 680px;
+        }
+        
+        .sharabesh-premium-carousel__title {
+            font-size: 3.5rem;
+        }
+        
+        .sharabesh-premium-carousel__description {
+            font-size: 1.1rem;
+        }
+    }
+
+    /* Tablet */
+    @media (max-width: 1024px) {
+        .sharabesh-premium-carousel {
+            height: 75vh;
+            min-height: 500px;
+            max-height: 600px;
+        }
+        
+        .sharabesh-premium-carousel__title {
+            font-size: 2.5rem;
+        }
+        
+        .sharabesh-premium-carousel__description {
+            font-size: 0.95rem;
+        }
+    }
+
+    /* Mobile - Slightly increased height */
+    @media (max-width: 768px) {
+        .sharabesh-premium-carousel {
+            height: 92vh;           /* Increased from typical 85vh for better readability */
+            min-height: 600px;
+            max-height: 750px;
+        }
+        
+        .sharabesh-premium-carousel__content {
+            align-items: center;
+            text-align: center;
+        }
+        
+        .sharabesh-premium-carousel__title {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+        
+        .sharabesh-premium-carousel__description {
+            font-size: 0.9rem;
+            margin-bottom: 28px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .sharabesh-premium-carousel__badge {
+            font-size: 0.7rem;
+            padding: 4px 14px;
+            margin-bottom: 20px;
+        }
+        
+        .sharabesh-premium-carousel__btn {
+            padding: 12px 32px;
+            font-size: 0.9rem;
+        }
+        
+        .sharabesh-premium-carousel__prev,
+        .sharabesh-premium-carousel__next {
+            width: 36px;
+            height: 36px;
+            font-size: 1.1rem;
+        }
+        
+        .sharabesh-premium-carousel__dots {
+            bottom: 20px;
+            gap: 10px;
+        }
+        
+        .sharabesh-premium-carousel__dots .dot {
+            width: 8px;
+            height: 8px;
+        }
+        
+        .sharabesh-premium-carousel__dots .dot.active {
+            width: 24px;
+        }
+    }
+
+    /* Small Mobile */
+    @media (max-width: 480px) {
+        .sharabesh-premium-carousel {
+            height: 95vh;           /* Slightly increased for small phones */
+            min-height: 580px;
+            max-height: 700px;
+        }
+        
+        .sharabesh-premium-carousel__title {
+            font-size: 1.6rem;
+        }
+        
+        .sharabesh-premium-carousel__description {
+            font-size: 0.8rem;
+        }
+        
+        .sharabesh-premium-carousel__btn {
+            padding: 10px 24px;
+            font-size: 0.8rem;
+        }
+        
+        .sharabesh-premium-carousel__prev,
+        .sharabesh-premium-carousel__next {
+            width: 32px;
+            height: 32px;
+            font-size: 1rem;
+        }
+        
+        .sharabesh-premium-carousel__dots {
+            bottom: 15px;
+            gap: 8px;
+        }
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@400;500;600;700;800&display=swap');
+

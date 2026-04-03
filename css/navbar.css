@@ -1,0 +1,396 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+            color: #1A1A1A;
+        }
+
+        /* ========= STICKY NAVIGATION BAR ========= */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+            width: 100%;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            gap: 24px;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 32px;
+            min-height: 50px;
+        }
+
+        /* LEFT: Logo with actual image */
+        .logo-area {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .logo-image {
+            display: flex;
+            align-items: center;
+        }
+        .logo-img:hover {
+    transform: scale(1.05);
+}
+
+        /* Actual logo image - modern solar/energy themed SVG as data URI */
+        .logo-img {
+            width: auto;
+            height: 90px;
+            display: block;
+            object-fit: contain;
+        }
+
+        /* Company name next to logo (optional small text for brand) */
+        .logo-text-small {
+            font-weight: 700;
+            font-size: 1rem;
+            margin-left: 10px;
+            background: linear-gradient(135deg, #1B5E20, #2ECC71);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            white-space: nowrap;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Desktop navigation menu */
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+            margin-left: auto;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #1A1A1A;
+            padding: 8px 0;
+            transition: color 0.25s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-family: 'Poppins', sans-serif;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .nav-link i {
+            font-size: 0.75rem;
+            color: #6B7280;
+            transition: transform 0.2s;
+        }
+
+        .nav-link:hover {
+            color: #2ECC71;
+        }
+
+        .nav-link:hover i {
+            color: #2ECC71;
+            transform: rotate(180deg);
+        }
+
+        /* Dropdown menu */
+        .dropdown-menu {
+            position: absolute;
+            top: 42px;
+            left: -20px;
+            background: white;
+            min-width: 220px;
+            border-radius: 16px;
+            box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.12);
+            padding: 12px 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.25s ease;
+            z-index: 100;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .nav-item:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 24px;
+            text-decoration: none;
+            color: #1A1A1A;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #A5D6A7;
+            color: #1B5E20;
+            padding-left: 28px;
+        }
+
+        /* Right CTA Button */
+        .nav-cta {
+            flex-shrink: 0;
+        }
+
+        .cta-primary {
+            background-color: #2ECC71;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.25s;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(46,204,113,0.2);
+            border: none;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            white-space: nowrap;
+        }
+
+        .cta-primary:hover {
+            background-color: #1B5E20;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(27,94,32,0.25);
+        }
+
+        /* Hamburger button */
+        .hamburger {
+            display: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: #1B5E20;
+            background: none;
+            border: none;
+            padding: 8px;
+            margin-left: auto;
+            z-index: 1001;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            .nav-container {
+                padding: 0 24px;
+                gap: 16px;
+            }
+            .nav-menu {
+                gap: 20px;
+            }
+            .cta-primary {
+                padding: 8px 18px;
+                font-size: 0.85rem;
+            }
+            .logo-text-small {
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 880px) {
+            .hamburger {
+                display: block;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 0;
+                width: 85%;
+                max-width: 360px;
+                height: 100vh;
+                background-color: white;
+                box-shadow: 6px 0 25px rgba(0,0,0,0.15);
+                padding: 100px 28px 40px 28px;
+                gap: 28px;
+                transition: left 0.3s ease-in-out;
+                align-items: flex-start;
+                z-index: 1000;
+                border-radius: 0 20px 20px 0;
+                margin-left: 0;
+                overflow-y: auto;
+                flex-direction: column;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            /* Mobile dropdown: static, toggle via class */
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                background: #F5F7FA;
+                margin-top: 12px;
+                border-radius: 16px;
+                padding: 8px 0;
+                display: none;
+                width: 100%;
+            }
+            
+            .nav-item.active-dropdown .dropdown-menu {
+                display: block;
+            }
+            
+            .nav-link {
+                justify-content: space-between;
+                width: 100%;
+                font-size: 1.1rem;
+                padding: 8px 0;
+            }
+            
+            .nav-cta {
+                width: 100%;
+                margin-top: 16px;
+            }
+            
+            .cta-primary {
+                text-align: center;
+                display: block;
+                width: 100%;
+                padding: 14px 20px;
+                font-size: 1rem;
+            }
+            
+            .logo-img {
+                width: 42px;
+                height: 42px;
+            }
+            
+            .logo-text-small {
+                font-size: 0.8rem;
+            }
+            
+            /* Overlay when menu is open */
+            .menu-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.5);
+                z-index: 999;
+                display: none;
+            }
+            
+            .menu-overlay.active {
+                display: block;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .logo-img {
+                width: 64px;
+                height: 64px;
+            }
+            .logo-text-small {
+                display: none; /* hide text on very small screens to save space */
+            }
+        }
+
+        /* Hero preview section */
+        .hero-preview {
+            background: linear-gradient(125deg, #0D1B4C 0%, #0a1538 40%, #1B5E20 100%);
+            padding: 80px 32px;
+            color: white;
+            text-align: center;
+        }
+        .hero-preview h1 {
+            font-size: 2.5rem;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 16px;
+        }
+        .hero-preview p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(46,204,113,0.2);
+            padding: 6px 16px;
+            border-radius: 40px;
+            margin-bottom: 24px;
+            font-size: 0.8rem;
+        }
+        .demo-note {
+            background: #F5F7FA;
+            text-align: center;
+            padding: 12px;
+            font-size: 0.85rem;
+            color: #2c5e2e;
+            border-top: 1px solid #e0e0e0;
+        }
+        /* Updated: Container height increased to fit a larger logo */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 32px;
+    min-height: 90px; /* Increased from 80px */
+}
+
+/* Updated: Increased Logo Size */
+.logo-img {
+    width: auto;      /* Let width adjust automatically */
+    height: 90px;    /* Increased from 64px - Adjust this number as needed */
+    display: block;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Add a slight hover effect to the logo */
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 880px) {
+    .nav-container {
+        min-height: 90px; /* Slightly smaller height on mobile */
+        padding: 0 20px;
+    }
+
+    .logo-img {
+        height: 70px; /* Large but fits mobile screens better */
+    }
+}
+
+@media (max-width: 560px) {
+    .logo-img {
+        height: 60px; /* Balanced for very small phones */
+    }
+}
+   

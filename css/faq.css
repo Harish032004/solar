@@ -1,0 +1,165 @@
+/* FAQ Specific Styling */
+    .sharabesh-faq {
+        background-color: #FFFFFF;
+        padding: 100px 24px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .sharabesh-faq__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .sharabesh-faq__header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .sharabesh-section-subtitle {
+        color: #6B7280;
+        margin-top: 10px;
+        font-size: 1.1rem;
+    }
+
+    .sharabesh-faq__layout {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 60px;
+        align-items: flex-start;
+    }
+
+    /* Tabs Logic */
+    .sharabesh-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .sharabesh-tabs input[type="radio"] { display: none; }
+
+    .sharabesh-tabs label {
+        padding: 12px 25px;
+        background: #F5F7FA;
+        border-radius: 50px;
+        cursor: pointer;
+        font-weight: 600;
+        color: #1A1A1A;
+        transition: 0.3s;
+        border: 2px solid transparent;
+    }
+
+    .sharabesh-tabs input:checked + label {
+        background: #E8F5E9;
+        color: #1B5E20;
+        border-color: #2ECC71;
+    }
+
+    .tab-content {
+        display: none;
+        width: 100%;
+        margin-top: 30px;
+        animation: fadeIn 0.5s ease;
+    }
+
+    /* Toggle visibility based on radio selection */
+    #tab-general:checked ~ .content-general,
+    #tab-maintenance:checked ~ .content-maintenance,
+    #tab-economics:checked ~ .content-economics {
+        display: block;
+    }
+
+    /* Accordion (Details/Summary) Styling */
+    details {
+        background: #FFFFFF;
+        border: 1px solid #E5E7EB;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    details[open] {
+        border-color: #2ECC71;
+        box-shadow: 0 4px 15px rgba(46, 204, 113, 0.1);
+    }
+
+    summary {
+        padding: 20px;
+        list-style: none;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #1A1A1A;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary i {
+        font-size: 0.8rem;
+        transition: 0.3s;
+        color: #2ECC71;
+    }
+
+    details[open] summary i { transform: rotate(45deg); }
+
+    details p {
+        padding: 0 20px 20px;
+        color: #6B7280;
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+
+    /* Right Side Image/Technician Card */
+    .sharabesh-tech-card {
+        position: relative;
+        border-radius: 28px;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+    .sharabesh-tech-img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .sharabesh-tech-badge {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        right: 30px;
+        background: rgba(255,255,255,0.95);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border-left: 5px solid #2ECC71;
+    }
+
+    .sharabesh-tech-badge i {
+        font-size: 2rem;
+        color: #1B5E20;
+    }
+
+    .sharabesh-tech-badge span {
+        font-weight: 700;
+        color: #1B5E20;
+        font-size: 1rem;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 900px) {
+        .sharabesh-faq__layout { grid-template-columns: 1fr; }
+        .sharabesh-tech-img { height: 400px; }
+        .sharabesh-faq { padding: 60px 20px; }
+    }
