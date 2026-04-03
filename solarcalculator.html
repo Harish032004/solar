@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Sharabesh Technologies & Energies | Premium Navbar</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/solutions.css">
+    <link rel="stylesheet" href="css/testimonial.css">
+    <link rel="stylesheet" href="css/trusted.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/homepagecss/homehero.css">
+    <link rel="stylesheet" href="css/homepagecss/homecontact.css">
+    <link rel="stylesheet" href="css/homepagecss/whychoose.css">
+    <link rel="stylesheet" href="css/homepagecss/process.css">
+   
+</head>
+<body>
+
+<!-- STICKY NAVIGATION BAR with actual logo image -->
+<nav class="navbar">
+    <div class="nav-container">
+        <!-- Left: Logo image (actual SVG data URI - solar/leaf icon) -->
+        <div class="logo-area">
+            <div class="logo-image">
+                <img class="logo-img" src="imagess/client logo.jpeg" alt="Sharabesh Technologies Logo">
+                <!-- <span class="logo-text-small">Sharabesh</span> -->
+            </div>
+        </div>
+
+        <!-- Hamburger button (mobile only) -->
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Desktop + Mobile Menu -->
+        <ul class="nav-menu" id="navMenu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Our Offerings <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="home.html">Home</a>
+                    <a href="commercial.html">Commercial</a>
+                    <a href="housingsociety.html">House Society</a>
+                  
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Solar Solutions <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="ongridsolarsystem.html">On Grid Solar System</a>
+                    <a href="offgridSolarsystem.html">Off Grid Solar System</a>
+                    
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">More <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                   <a href="solarcalculator.html">Solar Calculator</a>
+                    <a href="solarpro.html">Solar Pro</a>
+                </div>
+            </li>
+            <li class="nav-cta">
+                <a href="#" class="cta-primary">Get Free Solar Quote</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Overlay for mobile menu -->
+<div id="menuOverlay" class="menu-overlay"></div>
+
+
+<!-- Solar Savings Calculator Section | Sharabesh Technologies & Energies -->
+<!-- Replicated from SolarSquare design - No navbar, no footer -->
+<section class="sharabesh-calculator-page">
+    <div class="sharabesh-calc-container">
+        
+        <!-- Hero / Header Section -->
+        <div class="sharabesh-calc-hero">
+            <h1 class="sharabesh-calc-main-title">Calculate Your Solar Savings Now!</h1>
+            <p class="sharabesh-calc-subtitle">Unlock savings, build that dream fund, and start ticking off your checklist.</p>
+        </div>
+
+        <!-- Calculator Input Card -->
+        <div class="sharabesh-calc-card">
+            <div class="sharabesh-calc-inputs">
+                <div class="input-group">
+                    <label><i class="fas fa-map-marker-alt"></i> Pin code</label>
+                    <input type="text" id="calcPincode" placeholder="600021 (Chennai)" value="600021" class="calc-input-field">
+                </div>
+                <div class="input-group">
+                    <label><i class="fas fa-rupee-sign"></i> Avg electricity bill</label>
+                    <div class="bill-input-wrapper">
+                        <span class="rupee-symbol">₹</span>
+                        <input type="number" id="calcBill" placeholder="2300" value="2300" class="calc-input-field bill-input">
+                    </div>
+                </div>
+                <button id="calculateSavingsBtn" class="sharabesh-calc-btn">Calculate Savings <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="sharabesh-brand-tagline">
+                <p>Take control of your electricity bill with <strong>Sharabesh Technologies & Energies</strong><br>India’s fastest growing home solar company!</p>
+            </div>
+        </div>
+
+        <!-- Results Section (Dynamic) -->
+        <div id="resultsSection" class="sharabesh-results-section" style="display: none;">
+            <!-- System Size & Roof Area -->
+            <div class="sharabesh-results-grid">
+                <div class="result-card">
+                    <h4>System Size</h4>
+                    <div class="result-value" id="systemSize">3.24 kW</div>
+                </div>
+                <div class="result-card">
+                    <h4>Roof Area</h4>
+                    <div class="result-value" id="roofArea">192 sq. ft.</div>
+                </div>
+                <div class="result-card">
+                    <h4>Minimum Down Payment</h4>
+                    <div class="result-value" id="minDownPayment">₹78,000</div>
+                    <div class="result-sub" id="subsidyText">Subsidy: ₹78,000</div>
+                </div>
+                <div class="result-card">
+                    <h4>EMI Tenure</h4>
+                    <div class="result-value" id="emiTenure">5 years</div>
+                    <div class="result-sub" id="emiAmount">₹3,492/month</div>
+                </div>
+            </div>
+
+            <!-- Environmental Impact -->
+            <div class="sharabesh-impact-section">
+                <h3>Your Solar Savings More Than Money</h3>
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <i class="fas fa-leaf"></i>
+                        <div class="impact-value" id="co2Saved">3,810 kg</div>
+                        <div class="impact-label">CO₂ Mitigated</div>
+                    </div>
+                    <div class="impact-item">
+                        <i class="fas fa-tree"></i>
+                        <div class="impact-value" id="treesPlanted">127</div>
+                        <div class="impact-label">Trees Planted</div>
+                    </div>
+                    <div class="impact-item">
+                        <i class="fas fa-car"></i>
+                        <div class="impact-value" id="distanceSaved">34,020 Kms</div>
+                        <div class="impact-label">Distance (car travel)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="sharabesh-disclaimer">
+                <p><strong>Disclaimer:</strong></p>
+                <p>1. Monthly, your end-of-year savings have been calculated based on actual savings calculated over 25 years. Annual degradation of 1% and 3% annual inflation have been assumed for this calculation.</p>
+                <p>2. The solar panel has been installed in accordance with the latest industry standards and best practices. However, it is not guaranteed to be installed at its original location. The installer may recommend alternative locations for optimal performance.</p>
+                <p>3. The solar panels are designed to withstand extreme weather conditions. However, they are not immune to damage from natural disasters such as hailstorms, lightning strikes, and high winds. In the event of a storm, please contact your local authorities for guidance on how to protect your solar panels.</p>
+            </div>
+        </div>
+
+        <!-- Why Use This Calculator Section -->
+        <div class="sharabesh-why-calculator">
+            <h2>Why Use the Sharabesh Solar Panel Calculator?</h2>
+            <p>Our intelligent solar panel calculator for home is powered by region-specific data and takes into account electricity tariffs, panel degradation, inflation and solar irradiance levels to give you a personalised solar savings report.</p>
+            <div class="features-grid">
+                <div class="feature"><i class="fas fa-chart-line"></i> Estimate Solar Savings</div>
+                <div class="feature"><i class="fas fa-solar-panel"></i> Size Your Solar System</div>
+                <div class="feature"><i class="fas fa-calculator"></i> Calculate Investment & ROI</div>
+                <div class="feature"><i class="fas fa-arrows-alt"></i> Area Requirement</div>
+                <div class="feature"><i class="fas fa-chart-bar"></i> System Performance</div>
+                <div class="feature"><i class="fas fa-rupee-sign"></i> Compare Financing Options</div>
+            </div>
+        </div>
+
+        <!-- How It Works -->
+        <div class="sharabesh-how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <p>Enter your pin code</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <p>Fill in your average electricity bill</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <p>Get instant solar savings report</p>
+                </div>
+            </div>
+            <p class="how-it-works-desc">In seconds, our solar panel price calculator shows you the required system size, required shadow free space on the roof, monthly and yearly savings, estimated cost of installation, subsidy that you will get, power generation, lifetime savings and Return on investment.</p>
+        </div>
+
+        <!-- Ready to Go Solar CTA -->
+        <div class="sharabesh-ready-cta">
+            <h3>Ready to Go Solar?</h3>
+            <p>The Sharabesh Solar Panel Calculator is built for precision, ease, and speed. As next steps, book a free solar consultation with our solar experts and let us help you make an informed decision.</p>
+            <a href="https://wa.me/919789029012?text=Hello%20Sharabesh%20Technologies,%20I%20want%20to%20book%20a%20free%20solar%20consultation" class="sharabesh-consult-btn" target="_blank" rel="noopener noreferrer">
+                Book a Free Consultation <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <!-- Journey Section -->
+        <div class="sharabesh-journey">
+            <h2>Your Journey with Sharabesh</h2>
+            <div class="journey-steps">
+                <div class="journey-item">
+                    <div class="journey-icon"><i class="fas fa-calculator"></i></div>
+                    <h4>Calculate Your Savings</h4>
+                    <p>Use our Solar Calculator to check your investment, ROI, and savings in seconds.</p>
+                </div>
+                <div class="journey-item">
+                    <div class="journey-icon"><i class="fas fa-headset"></i></div>
+                    <h4>Book a Free Consultation</h4>
+                    <p>Our experts visit at your convenience for a detailed consultation.</p>
+                </div>
+                <div class="journey-item">
+                    <div class="journey-icon"><i class="fas fa-bolt"></i></div>
+                    <h4>Quick & Safe Installation</h4>
+                    <p>Get our cyclone-proof system installed in just 8 hours.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Presence Section -->
+        <div class="sharabesh-presence">
+            <h2>We are present here</h2>
+            <div class="city-grid">
+                <div class="city-group">
+                    <strong>Delhi NCR</strong>
+                    <span>Delhi, Gurugram, NCR</span>
+                </div>
+                <div class="city-group">
+                    <strong>Gujarat</strong>
+                    <span>Ahmedabad, Anand, Surat, Vadodara</span>
+                </div>
+                <div class="city-group">
+                    <strong>Karnataka</strong>
+                    <span>Bengaluru, Mysuru</span>
+                </div>
+                <div class="city-group">
+                    <strong>Maharashtra</strong>
+                    <span>Mumbai, Pune, Nagpur, Nashik, Thane, Kolhapur, Amravati, Jalgaon</span>
+                </div>
+                <div class="city-group">
+                    <strong>Tamil Nadu</strong>
+                    <span>Chennai, Coimbatore</span>
+                </div>
+                <div class="city-group">
+                    <strong>Telangana</strong>
+                    <span>Hyderabad</span>
+                </div>
+                <div class="city-group">
+                    <strong>Rajasthan</strong>
+                    <span>Jaipur, Ajmer, Udaipur</span>
+                </div>
+                <div class="city-group">
+                    <strong>Other States</strong>
+                    <span>Kochi, Thiruvananthapuram, Chandigarh, Varanasi, Hazaribagh, Bhopal, Indore</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Made in India -->
+        <div class="sharabesh-madeinindia">
+            <i class="fas fa-heart" style="color: #ff9933;"></i>
+            <i class="fas fa-heart" style="color: #ffffff;"></i>
+            <i class="fas fa-heart" style="color: #138808;"></i>
+            <span>Proudly made in India</span>
+        </div>
+    </div>
+</section>
+
+<!-- Styles -->
+<style>
+    .sharabesh-calculator-page {
+        --primary-green: #2ECC71;
+        --dark-green: #1B5E20;
+        --accent-lime: #A5D6A7;
+        --deep-blue: #0D1B4C;
+        --white: #FFFFFF;
+        --light-grey: #F5F7FA;
+        --text-dark: #1A1A1A;
+        --text-light: #6B7280;
+        --shadow-sm: 0 8px 20px rgba(0, 0, 0, 0.08);
+        --transition: all 0.3s ease;
+    }
+
+    .sharabesh-calculator-page {
+        width: 100%;
+        background: linear-gradient(135deg, #F8FAFF 0%, #FFFFFF 100%);
+        font-family: 'Inter', 'Poppins', sans-serif;
+        padding: 2rem 0 3rem 0;
+    }
+
+    .sharabesh-calc-container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    /* Hero Section */
+    .sharabesh-calc-hero {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .sharabesh-calc-main-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: var(--dark-green);
+        margin-bottom: 0.75rem;
+        letter-spacing: -0.02em;
+    }
+    .sharabesh-calc-subtitle {
+        font-size: 1.1rem;
+        color: var(--text-light);
+    }
+
+    /* Calculator Card */
+    .sharabesh-calc-card {
+        background: var(--white);
+        border-radius: 28px;
+        box-shadow: var(--shadow-sm);
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border: 1px solid rgba(46, 204, 113, 0.2);
+    }
+    .sharabesh-calc-inputs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        align-items: flex-end;
+        margin-bottom: 1.5rem;
+    }
+    .input-group {
+        flex: 1;
+        min-width: 200px;
+    }
+    .input-group label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: var(--text-dark);
+        font-size: 0.9rem;
+    }
+    .input-group label i {
+        color: var(--primary-green);
+        margin-right: 0.3rem;
+    }
+    .calc-input-field {
+        width: 100%;
+        padding: 0.9rem 1rem;
+        border: 1.5px solid #E5E7EB;
+        border-radius: 14px;
+        font-size: 1rem;
+        font-family: inherit;
+        transition: var(--transition);
+    }
+    .calc-input-field:focus {
+        outline: none;
+        border-color: var(--primary-green);
+        box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.1);
+    }
+    .bill-input-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--white);
+        border: 1.5px solid #E5E7EB;
+        border-radius: 14px;
+        padding: 0 0.5rem;
+    }
+    .rupee-symbol {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--text-light);
+    }
+    .bill-input-wrapper .bill-input {
+        border: none;
+        padding: 0.9rem 0;
+    }
+    .sharabesh-calc-btn {
+        background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+        color: white;
+        border: none;
+        padding: 0.9rem 2rem;
+        border-radius: 14px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: var(--transition);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+    .sharabesh-calc-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-sm);
+    }
+    .sharabesh-brand-tagline {
+        text-align: center;
+        padding-top: 1rem;
+        border-top: 1px solid #E5E7EB;
+    }
+    .sharabesh-brand-tagline p {
+        color: var(--text-light);
+        font-size: 0.9rem;
+    }
+    .sharabesh-brand-tagline strong {
+        color: var(--primary-green);
+    }
+
+    /* Results Section */
+    .sharabesh-results-section {
+        margin-bottom: 2.5rem;
+    }
+    .sharabesh-results-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .result-card {
+        background: linear-gradient(135deg, var(--deep-blue), #0F2A5C);
+        border-radius: 20px;
+        padding: 1.5rem;
+        color: white;
+        text-align: center;
+    }
+    .result-card h4 {
+        font-size: 0.9rem;
+        font-weight: 500;
+        opacity: 0.8;
+        margin-bottom: 0.5rem;
+    }
+    .result-value {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 0.25rem;
+    }
+    .result-sub {
+        font-size: 0.8rem;
+        opacity: 0.8;
+    }
+
+    /* Impact Section */
+    .sharabesh-impact-section {
+        background: var(--light-grey);
+        border-radius: 24px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .sharabesh-impact-section h3 {
+        font-size: 1.3rem;
+        color: var(--dark-green);
+        margin-bottom: 1.5rem;
+    }
+    .impact-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .impact-item {
+        text-align: center;
+    }
+    .impact-item i {
+        font-size: 2.5rem;
+        color: var(--primary-green);
+        margin-bottom: 0.5rem;
+    }
+    .impact-value {
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: var(--dark-green);
+    }
+    .impact-label {
+        font-size: 0.85rem;
+        color: var(--text-light);
+    }
+
+    /* Disclaimer */
+    .sharabesh-disclaimer {
+        background: #FFF8E7;
+        border-left: 4px solid var(--primary-green);
+        padding: 1rem 1.5rem;
+        border-radius: 16px;
+        font-size: 0.75rem;
+        color: var(--text-light);
+        line-height: 1.5;
+    }
+    .sharabesh-disclaimer p {
+        margin-bottom: 0.3rem;
+    }
+
+    /* Why Use Section */
+    .sharabesh-why-calculator {
+        background: var(--white);
+        border-radius: 24px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: var(--shadow-sm);
+    }
+    .sharabesh-why-calculator h2 {
+        font-size: 1.6rem;
+        color: var(--dark-green);
+        margin-bottom: 1rem;
+    }
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    .feature {
+        background: var(--light-grey);
+        padding: 0.8rem 1rem;
+        border-radius: 12px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+    .feature i {
+        color: var(--primary-green);
+        width: 24px;
+    }
+
+    /* How It Works */
+    .sharabesh-how-it-works {
+        background: linear-gradient(135deg, var(--deep-blue), #0D1B4C);
+        border-radius: 24px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        color: white;
+        text-align: center;
+    }
+    .sharabesh-how-it-works h2 {
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+    .steps {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .step {
+        text-align: center;
+    }
+    .step-number {
+        width: 50px;
+        height: 50px;
+        background: var(--primary-green);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin: 0 auto 0.8rem;
+    }
+    .how-it-works-desc {
+        font-size: 0.95rem;
+        opacity: 0.9;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    /* CTA */
+    .sharabesh-ready-cta {
+        background: var(--light-grey);
+        border-radius: 24px;
+        padding: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .sharabesh-ready-cta h3 {
+        font-size: 1.6rem;
+        color: var(--dark-green);
+        margin-bottom: 0.75rem;
+    }
+    .sharabesh-consult-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        background: var(--primary-green);
+        color: white;
+        padding: 0.8rem 2rem;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 1rem;
+        transition: var(--transition);
+    }
+    .sharabesh-consult-btn:hover {
+        background: var(--dark-green);
+        transform: translateY(-2px);
+    }
+
+    /* Journey Section */
+    .sharabesh-journey {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .sharabesh-journey h2 {
+        font-size: 1.8rem;
+        color: var(--dark-green);
+        margin-bottom: 1.5rem;
+    }
+    .journey-steps {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .journey-item {
+        flex: 1;
+        min-width: 200px;
+        background: var(--white);
+        padding: 1.5rem;
+        border-radius: 20px;
+        box-shadow: var(--shadow-sm);
+    }
+    .journey-icon {
+        font-size: 2.5rem;
+        color: var(--primary-green);
+        margin-bottom: 1rem;
+    }
+
+    /* Presence Section */
+    .sharabesh-presence {
+        background: var(--light-grey);
+        border-radius: 24px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+    .sharabesh-presence h2 {
+        font-size: 1.5rem;
+        color: var(--dark-green);
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .city-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+    }
+    .city-group {
+        background: white;
+        padding: 0.8rem 1rem;
+        border-radius: 12px;
+    }
+    .city-group strong {
+        color: var(--primary-green);
+        display: block;
+        margin-bottom: 0.3rem;
+    }
+    .city-group span {
+        font-size: 0.85rem;
+        color: var(--text-light);
+    }
+
+    /* Made in India */
+    .sharabesh-madeinindia {
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--text-light);
+    }
+    .sharabesh-madeinindia i {
+        margin: 0 0.2rem;
+        font-size: 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .sharabesh-calc-container {
+            padding: 0 1rem;
+        }
+        .sharabesh-calc-main-title {
+            font-size: 1.8rem;
+        }
+        .sharabesh-calc-inputs {
+            flex-direction: column;
+        }
+        .sharabesh-calc-btn {
+            width: 100%;
+            justify-content: center;
+        }
+        .impact-grid {
+            gap: 1.5rem;
+        }
+        .result-value {
+            font-size: 1.5rem;
+        }
+        .steps {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    @media (max-width: 480px) {
+        .sharabesh-calc-main-title {
+            font-size: 1.5rem;
+        }
+        .sharabesh-results-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<!-- Font Awesome & Google Fonts -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- JavaScript for Calculator Logic -->
+<script>
+    (function() {
+        const calculateBtn = document.getElementById('calculateSavingsBtn');
+        const resultsSection = document.getElementById('resultsSection');
+        const pincodeInput = document.getElementById('calcPincode');
+        const billInput = document.getElementById('calcBill');
+
+        function calculateSavings() {
+            let pincode = pincodeInput ? pincodeInput.value.trim() : '600021';
+            let monthlyBill = parseFloat(billInput ? billInput.value : 2300);
+            if (isNaN(monthlyBill)) monthlyBill = 2300;
+
+            // Calculation logic based on SolarSquare methodology
+            // System size: ~1kW per ₹1,500 monthly bill approx (Indian average)
+            let systemSize = (monthlyBill / 1500) * 1.2;
+            systemSize = Math.round(systemSize * 100) / 100;
+            if (systemSize < 1) systemSize = 1;
+            
+            // Roof area: ~60 sq ft per kW
+            let roofArea = Math.round(systemSize * 60);
+            
+            // Cost per kW: ~₹60,000 after subsidy approx
+            let costPerKW = 58000;
+            let totalCost = Math.round(systemSize * costPerKW);
+            let subsidy = Math.round(totalCost * 0.4); // 40% subsidy
+            let minDownPayment = Math.round(totalCost - subsidy);
+            if (minDownPayment < 0) minDownPayment = 0;
+            
+            // EMI calculation: 5 years @ 9% interest
+            let emiTenureMonths = 60;
+            let interestRate = 0.09;
+            let loanAmount = totalCost - subsidy;
+            let emi = 0;
+            if (loanAmount > 0) {
+                let monthlyRate = interestRate / 12;
+                emi = loanAmount * monthlyRate * Math.pow(1 + monthlyRate, emiTenureMonths) / (Math.pow(1 + monthlyRate, emiTenureMonths) - 1);
+                emi = Math.round(emi);
+            }
+            
+            // Environmental impact
+            let yearlyGeneration = systemSize * 1500; // kWh per year
+            let co2Kg = Math.round(yearlyGeneration * 0.85); // 0.85 kg CO2 per kWh
+            let treesPlanted = Math.round(co2Kg / 30); // ~30kg CO2 per tree per year
+            let distanceKms = Math.round(yearlyGeneration * 4.5); // 4.5 km per kWh (EV equivalent)
+            
+            // Update DOM
+            document.getElementById('systemSize').innerHTML = systemSize.toFixed(2) + ' kW';
+            document.getElementById('roofArea').innerHTML = roofArea.toLocaleString() + ' sq. ft.';
+            document.getElementById('minDownPayment').innerHTML = '₹' + minDownPayment.toLocaleString();
+            document.getElementById('subsidyText').innerHTML = 'Subsidy: ₹' + subsidy.toLocaleString();
+            document.getElementById('emiTenure').innerHTML = '5 years';
+            document.getElementById('emiAmount').innerHTML = '₹' + emi.toLocaleString() + '/month';
+            document.getElementById('co2Saved').innerHTML = co2Kg.toLocaleString() + ' kg';
+            document.getElementById('treesPlanted').innerHTML = treesPlanted.toLocaleString();
+            document.getElementById('distanceSaved').innerHTML = distanceKms.toLocaleString() + ' Kms';
+            
+            resultsSection.style.display = 'block';
+            resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        
+        if (calculateBtn) {
+            calculateBtn.addEventListener('click', calculateSavings);
+            // Auto-calculate on page load with default values
+            setTimeout(calculateSavings, 100);
+        }
+    })();
+</script>
+
+
+<!-- Footer Section - Sharabesh Technologies & Energies -->
+<!-- Mobile: 2x2 grid layout for links -->
+<footer class="sharabesh-footer">
+    <div class="sharabesh-footer__container">
+        <!-- Top Section: 3 Columns -->
+        <div class="sharabesh-footer__grid">
+            <!-- Left Column: Logo, Tagline, Contact, Social -->
+            <div class="sharabesh-footer__col">
+                <div class="sharabesh-footer__logo">
+                    <div class="sharabesh-footer__logo-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <span class="sharabesh-footer__logo-text">Sharabesh Technologies & Energies</span>
+                </div>
+                <p class="sharabesh-footer__tagline">Powering a sustainable tomorrow, today.</p>
+                
+                <div class="sharabesh-footer__contact">
+                    <div class="sharabesh-footer__contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 1800 123 4567</span>
+                    </div>
+                    <div class="sharabesh-footer__contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@sharabeshenergy.com</span>
+                    </div>
+                    <div class="sharabesh-footer__contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon - Sat: 9:00 AM - 7:00 PM</span>
+                    </div>
+                </div>
+                
+                <div class="sharabesh-footer__social">
+                    <a href="#" class="sharabesh-footer__social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="sharabesh-footer__social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="sharabesh-footer__social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="sharabesh-footer__social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="sharabesh-footer__social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <!-- Middle Column: Our Solutions & Quick Links (2x2 on mobile) -->
+            <div class="sharabesh-footer__col sharabesh-footer__col--links">
+                <div class="sharabesh-footer__links-wrapper">
+                    <div class="sharabesh-footer__links-group">
+                        <h4 class="sharabesh-footer__heading">Our Solutions</h4>
+                        <ul class="sharabesh-footer__links">
+                            <li><a href="#">Residential Solar</a></li>
+                            <li><a href="#">Commercial Solar</a></li>
+                            <li><a href="#">Industrial Solar</a></li>
+                            <li><a href="#">Solar for Societies</a></li>
+                            <li><a href="#">Energy Storage</a></li>
+                            <li><a href="#">EV Charging</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sharabesh-footer__links-group">
+                        <h4 class="sharabesh-footer__heading">Quick Links</h4>
+                        <ul class="sharabesh-footer__links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Get a Quote</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column: Address -->
+            <div class="sharabesh-footer__col">
+                <h4 class="sharabesh-footer__heading">Our Presence</h4>
+                <div class="sharabesh-footer__address">
+                    <div class="sharabesh-footer__address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Bengaluru (HQ)</strong><br>
+                            #45, Electronic City Phase 1,<br>
+                            Bengaluru - 560100
+                        </div>
+                    </div>
+                    <div class="sharabesh-footer__address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Mumbai</strong><br>
+                            BKC, Bandra East,<br>
+                            Mumbai - 400051
+                        </div>
+                    </div>
+                    <div class="sharabesh-footer__address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Delhi NCR</strong><br>
+                            Sector 44, Gurugram,<br>
+                            Haryana - 122002
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Section: Copyright & Legal Links -->
+        <div class="sharabesh-footer__bottom">
+            <div class="sharabesh-footer__bottom-left">
+                <span class="sharabesh-footer__made-in">Proudly made in India <i class="fas fa-heart"></i></span>
+            </div>
+            <div class="sharabesh-footer__bottom-right">
+                <a href="#">Privacy Policy</a>
+                <span class="sharabesh-footer__separator">|</span>
+                <a href="#">Terms of Service</a>
+                <span class="sharabesh-footer__separator">|</span>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+</body>
+<script src="js/navbar.js"></script>
+<script src="js/homepagejs/hero.js"></script>
+<script src="js/homepagejs/homecontact.js"></script>
+<script src="js/testimonial.js"></script>
+<script src="js/blog.js"></script>
+</html>
